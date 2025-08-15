@@ -17,31 +17,33 @@ const LandingPage = () => {
       {/* Hero Section */}
       <section className="flex flex-col sm:flex-row items-center">
         <img
-          className="w-full sm:w-1/2 h-[60vh] sm:h-[1024px] object-cover"
+          className="w-full h-[60vh] sm:h-[1024px] object-cover"
           src={images[currentImageIndex]}
           alt="Animation background"
         />
       </section>
 
       {/* Discovery Section */}
-      <section className="bg-[#e9eaef] font-semibold w-full flex items-center justify-between px-2 sm:px-4">
+      <section className="w-full flex items-stretch h-[50px] sm:h-[60px] font-semibold">
         {/* Left Side */}
-        <h2 className="text-xs sm:text-sm md:text-base whitespace-nowrap mr-3">
-          DISCOVER THE EXPERIENCE
-        </h2>
+        <div className="bg-[#e9eaef] flex items-center px-3 sm:px-6  ">
+          <h2 className="text-xs sm:text-sm md:text-lg whitespace-nowrap pl-10 gap-5">
+            DISCOVER THE EXPERIENCE
+          </h2>
+        </div>
 
         {/* Right Side */}
-        <ul className="flex items-center bg-[#1E305E] text-white text-[10px] sm:text-xs md:text-sm whitespace-nowrap overflow-x-auto ">
-          <li className="p-2 sm:p-3 md:p-4 hover:bg-blue-900 cursor-pointer">
+        <ul className="flex items-center bg-[#1E305E] text-white text-[10px] sm:text-xs md:text-sm whitespace-nowrap overflow-x-auto scrollbar-hide  pl-20 w-full">
+          <li className=" sm:px-4 sm:py-3   hover:underline cursor-pointer">
             HOW TRUST IS BUILT
           </li>
-          <li className="border-l border-white p-2 sm:p-3 md:p-4 hover:bg-blue-900 cursor-pointer">
+          <li className="border-l border-white px-2 py-1  sm:px-4 hover:underline cursor-pointer">
             ABOUT US
           </li>
-          <li className="border-l border-white p-2 sm:p-3 md:p-4 hover:bg-blue-900 cursor-pointer">
+          <li className=" border-l border-white px-2 py-1  sm:px-4 hover:underline cursor-pointer">
             OUR PROCESSES
           </li>
-          <li className="border-l border-white p-2 sm:p-3 md:p-4 hover:bg-blue-900 cursor-pointer">
+          <li className=" border-l border-white px-2 py-1  sm:px-4 hover:underline cursor-pointer">
             CUSTOMER CARE
           </li>
         </ul>
