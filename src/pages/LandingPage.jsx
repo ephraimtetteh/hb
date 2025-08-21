@@ -17,7 +17,7 @@ const LandingPage = () => {
       {/* Hero Section */}
       <section className="flex flex-col sm:flex-row items-center">
         <img
-          className="w-full h-[60vh] sm:h-[1024px] object-cover"
+          className="w-full h-[60vh] sm:h-[1024px] object-cover" 
           src={images[currentImageIndex]}
           alt="Animation background"
         />
@@ -48,6 +48,7 @@ const LandingPage = () => {
           </li>
         </ul>
       </section>
+      
     </div>
   );
 };
