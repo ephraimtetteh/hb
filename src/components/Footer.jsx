@@ -13,17 +13,17 @@ import assets from "../assets/assests";
 
 const Footer = () => {
   return (
-    <div className="container mx-auto pt-10 pb-5 overflow-x-hidden bg-[#1E305E] text-white p-2">
+    <div className="container mx-auto pt-10 pb-5 overflow-x-hidden bg-[#1E305E] text-white p-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
         <div className="flex flex-col gap-4">
-          <img src={assets.logo} alt="logo" className="w-32" />
-          <p className="text-white max-w-xs">
+          <img src={assets.logo} alt="logo" className="w-78" />
+          <p className="text-white max-w-xs text-[14px]">
             Our service to you is your our dedication to your worth...... Our service, Our dedication your worth.
           </p>
         </div>
         <div>
           <h3 className="font-bold text-lg mb-4 text-red">Quick Links</h3>
-          <ul className="space-y-2">
+          <ul className="space-y-2 text-[14px]">
             <li>
               <Link
                 to="/"
@@ -76,7 +76,7 @@ const Footer = () => {
         </div>
         <div>
           <h3 className="font-bold text-lg mb-4 text-red">Contact Us</h3>
-          <ul className="space-y-2">
+          <ul className="space-y-2 text-[14px]">
             <li className="text-white flex items-center gap-2">
               <FaMapMarkerAlt className="text-red" />
               39, 1st Circular Cresent Cantoment, Accra, Ghana

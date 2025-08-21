@@ -1,5 +1,4 @@
 import pictures from "./images/about/pictures.svg";
-import story from "./images/about/story.svg";
 import team1 from "./images/about/team1.jpg";
 import team2 from "./images/about/team2.jpg";
 import team3 from "./images/about/team3.jpg";
@@ -93,7 +92,6 @@ const assets = { bg9, team, left, right, selection,
     construct,
     arrowDownBold,
     pictures,
-    story,
     team1,
     team2,
     team3,

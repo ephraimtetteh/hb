@@ -49,7 +49,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`container mx-auto p-2 sticky top-0 z-50 transition-all duration-300 overflow-x-hidden ${
+      className={`container mx-auto p-2 px-10 sticky top-0 z-50 transition-all duration-300 overflow-x-hidden ${
         hasScrolled ? "bg-[#1E305E] backdrop-blur-md text-white" : "bg-[#1E305E] text-white"
       }`}
     >
