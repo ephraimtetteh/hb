@@ -1,9 +1,10 @@
 import React from "react";
-import assets from "../assets/assests.jsx";
 
-const AboutUs = () => {
-  return 
-  <div>About Us</div>;
+const About = () => {
+  return (
+
+    <div>About Us</div>
+  )
 };
 
-export default AboutUs;
+export default About;

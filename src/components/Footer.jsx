@@ -1,47 +1,143 @@
-import React from 'react'
-import assets from '../assets/assests.jsx'
+import React from "react";
+import { Link } from "react-router-dom";
+import {
+  FaMapMarkerAlt,
+  FaPhone,
+  FaInstagram,
+  FaTwitter,
+  FaFacebookF,
+  FaLinkedinIn,
+} from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
+import assets from "../assets/assests";
 
 const Footer = () => {
   return (
-    
-      <footer className='bg-blue-950 h-{595px}'>
-        <div className='justify-between py-8 px-8 flex align-center'>
-        {/* right side */}
+    <div className="container mx-auto pt-10 pb-5 overflow-x-hidden bg-[#1E305E] text-white p-2">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
+        <div className="flex flex-col gap-4">
+          <img src={assets.logo} alt="logo" className="w-32" />
+          <p className="text-white max-w-xs">
+            Our service to you is your our dedication to your worth...... Our service, Our dedication your worth.
+          </p>
+        </div>
         <div>
-          <img src="assets.logo" alt="" />
-          <div>
-            <p><span>Address</span>39, 1st Circular Crescent Cantoment, Accra - Ghana</p>
-            <p><span>Digital Address: </span>GL059-9755</p>
-            <p><span>Tel: </span>+1 (469) 410-9683</p>
-          </div>
+          <h3 className="font-bold text-lg mb-4 text-red">Quick Links</h3>
+          <ul className="space-y-2">
+            <li>
+              <Link
+                to="/"
+                className="text-white hover:text-red-600 transition-colors"
+              >
+                Privacy
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/services"
+                className="text-white hover:text-red-600 transition-colors"
+              >
+                Services
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/legal"
+                className="text-white hover:text-red-600 transition-colors"
+              >
+                Legal
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/realtors"
+                className="text-white hover:text-red-600 transition-colors"
+              >
+                Realtors
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/carrers"
+                className="text-white hover:text-red-600 transition-colors"
+              >
+                Carrers
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="/sitemap"
+                className="text-white hover:text-red-600 transition-colors"
+              >
+                Site Maps
+              </Link>
+            </li>
+          </ul>
         </div>
-
-        {/*footer left side */}
         <div>
-          <a href="">Privacy</a>
-          <a href="">Carrers</a>
-          <a href="">Legal</a>
-          <a href="">Realtors</a>
-          <a href="">Contact Us</a>
-          <a href="">Site Map</a>
+          <h3 className="font-bold text-lg mb-4 text-red">Contact Us</h3>
+          <ul className="space-y-2">
+            <li className="text-white flex items-center gap-2">
+              <FaMapMarkerAlt className="text-red" />
+              39, 1st Circular Cresent Cantoment, Accra, Ghana
+            </li>
+            <li className="text-white flex items-center gap-2">
+              <FaMapMarkerAlt className="text-red" />
+              Digital Address: GL059-9755
+            </li>
+            <li className="text-white flex items-center gap-2">
+              <FaPhone className="text-red" />
+              +1 (469) 410-9683, +233-54-931-1202
+            </li>
+            <li className="text-white flex items-center gap-2">
+              <MdEmail className="text-red" />
+              info@honest-builders.com
+            </li>
+          </ul>
         </div>
-        </div>
-
-       <div className='flex justify-between items-center'> 
-          <div>
-            <p>Copyright 2025 Honest Builders, LLC, All right reserved</p>
+        <div>
+          <h3 className="font-bold text-lg mb-4 text-deep-red">Follow Us</h3>
+          <div className="flex gap-4">
+            <a
+              href="#"
+              aria-label="Instagram"
+              className="hover:text-red-600 transition-colors"
+            >
+              <FaInstagram size={20} />
+            </a>
+            <a
+              href="#"
+              aria-label="Twitter"
+              className="hover:text-red-600 transition-colors"
+            >
+              <FaTwitter size={20} />
+            </a>
+            <a
+              href="#"
+              aria-label="Facebook"
+              className="hover:text-red-600 transition-colors"
+            >
+              <FaFacebookF size={20} />
+            </a>
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              className="hover:text-red-600 transition-colors"
+            >
+              <FaLinkedinIn size={20} />
+            </a>
           </div>
-
-          {/* socials */}
-          <div className=''>
-            <img src={assets.instagram} alt="" />
-            <img src={assets.linkedIn} alt="" />
-            <img src={assets.youtube} alt="" />
-          </div>
         </div>
-       
-      </footer>
-  )
-}
+      </div>
+      <div className="border-t border-gray-200 mt-10">
+        <div className="flex justify-center items-center pt-6 pb-2">
+          <p className="text-gray-500">
+            © 2025 Honest Builders. All rights reserved.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Footer
+export default Footer;
