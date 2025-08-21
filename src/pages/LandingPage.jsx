@@ -16,9 +16,9 @@ const LandingPage = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="flex flex-col sm:flex-row items-center">
+      <section className="flex flex-col sm:flex-row items-center h-[85vh]">
         <img
-          className="w-full h-[60vh] sm:h-[1024px] object-cover" 
+          className="w-full h-[100%] sm:h-[640px] object-cover"
           src={images[currentImageIndex]}
           alt="Animation background"
         />
@@ -26,7 +26,9 @@ const LandingPage = () => {
 
       {/* Discovery Section */}
       <Discovery />
-      
+      <div className="h-[100vh]">
+
+      </div>
     </div>
   );
 };
