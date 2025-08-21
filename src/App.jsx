@@ -3,6 +3,7 @@ import "./App.css";
 import LandingPage from "./pages/LandingPage.jsx";
 import NavBar from "./components/Navbar.jsx";
 import Footer from "./components/Footer.jsx";
+import AboutUs from "./pages/navigate/AboutUs.jsx";
 function App() {
   return (
     <>
@@ -10,6 +11,8 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<LandingPage />} />
+
+          <Route path="/aboutUs" element={<AboutUs />} />
         </Routes>
         <Footer />
       </BrowserRouter>
