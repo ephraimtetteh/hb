@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import assets from "../assets/assests.jsx";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   const images = [assets.bg5, assets.bg2, assets.bg3, assets.bg5];
@@ -35,16 +36,16 @@ const LandingPage = () => {
         {/* Right Side */}
         <ul className="flex items-center bg-[#1E305E] text-white text-[10px] sm:text-xs md:text-sm whitespace-nowrap overflow-x-auto scrollbar-hide  pl-20 w-full">
           <li className=" sm:px-4 sm:py-3   hover:underline cursor-pointer">
-            HOW TRUST IS BUILT
+            <Link to="/trust">HOW TRUST IS BUILT</Link>
           </li>
           <li className="border-l border-white px-2 py-1  sm:px-4 hover:underline cursor-pointer">
-            ABOUT US
+            <Link to="/aboutus">ABOUT US</Link>
           </li>
           <li className=" border-l border-white px-2 py-1  sm:px-4 hover:underline cursor-pointer">
-            OUR PROCESSES
+            <Link to={"/processes"}>OUR PROCESSES</Link>
           </li>
           <li className=" border-l border-white px-2 py-1  sm:px-4 hover:underline cursor-pointer">
-            CUSTOMER CARE
+            <Link to={'/customercare'}>CUSTOMER CARE</Link>
           </li>
         </ul>
       </section>
