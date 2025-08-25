@@ -49,7 +49,7 @@ const Navbar = () => {
 
   return (
     <div
-      className={`container mx-auto p-2 px-10 sticky top-0 z-50 transition-all duration-300 overflow-x-hidden ${
+      className={`container mx-auto w-full p-2 px-10 sticky top-0 z-50 transition-all duration-300 overflow-x-hidden ${
         hasScrolled ? "bg-[#1E305E] backdrop-blur-md text-white" : "bg-[#1E305E] text-white"
       }`}
     >
@@ -57,17 +57,17 @@ const Navbar = () => {
         <img src={assets.logo} alt="logo" className="w-32" />
 
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex items-center gap-8 text-lg font-semibold">
-          <Link to="/">Home</Link>
-          <Link to="/services">Services</Link>
-          <Link to="/about">About</Link>
+        <div className="hidden md:flex items-center gap-8 text-lg font-medium">
+          <Link to="/">Find A Home</Link>
+          <Link to="/services">Communities</Link>
+          <Link to="/about">Plan & Design</Link>
           <Link to="/contact">Contact Us</Link>
         </div>
 
-        {/* Desktop Button */}
+        {/* Desktop Button
         <div className="hidden md:block">
           <button>contact</button>
-        </div>
+        </div> */}
 
         {/* Mobile Hamburger Icon */}
         <button

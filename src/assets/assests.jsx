@@ -84,6 +84,12 @@ import arrowDownBold from "./images/process/arrowDownBold.svg"
 import project from './projectdiscussion.jpg'
 import realtime from'./realtime.png'
 import booking from './appointment.jpg'
+import trust1 from './trust1.jpg'
+import trust2 from './trust2.jpg'
+import trust3 from './trust3.jpg'
+import trust4 from './trust4.jpg'
+import trust5 from './trust5.jpg'
+import trust6 from './trust6.jpg'
 
 
 
@@ -169,7 +175,14 @@ const assets = { bg9, team, left, right, selection,
     image3,
     project,
     realtime,
-    booking
+    booking,
+    trust1,
+    trust2,
+    trust3,
+    trust4,
+    trust5,
+    trust6
+
 };
 
 export default assets;
