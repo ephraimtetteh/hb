@@ -1,30 +1,13 @@
 import assets from "../../assets/assests.jsx";
 import Discovery from "../../components/Discovery.jsx";
 import { FaInstagram, FaLinkedinIn, FaFacebookF } from "react-icons/fa6";
+import Hero from "../../components/Hero.jsx";
 
 const AboutUs = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative">
-        <div className="w-full h-[80vh]">
-          <img
-            src={assets.bg5}
-            alt="About Image"
-            className="w-full h-[100%] object-cover"
-          />
-        </div>
-
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center font-bold text-3xl md:text-5xl">
-          <span className=" text-white text-3xl font-semibold">
-            Discover Us at
-          </span>
-          <br />
-          <span className="flex justify-center mt-2 text-[#a17e1e]">
-            Honest Builders
-          </span>
-        </div>
-      </section>
+      <Hero img={assets.bg1} title={'Discover Us At'} />
 
       {/* Discovery Section */}
       <Discovery />

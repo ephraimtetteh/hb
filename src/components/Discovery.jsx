@@ -24,7 +24,7 @@ const Discovery = () => {
             <Link to="/services">SERVICES</Link>
           </li>
           <li className=" border-l border-white px-2 py-1  sm:px-4 hover:underline cursor-pointer">
-            <Link to={"/processes"}>OUR PROCESSES</Link>
+            <Link to={"/process"}>OUR PROCESSES</Link>
           </li>
           <li className=" border-l border-white px-2 py-1  sm:px-4 hover:underline cursor-pointer">
             <Link to={"/customercare"}>CUSTOMER CARE</Link>

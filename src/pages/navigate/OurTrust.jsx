@@ -2,27 +2,12 @@ import React from 'react'
 import assets from '../../assets/assests';
 import Discovery from '../../components/Discovery'
 import Card from '../../components/Card';
+import Hero from '../../components/Hero';
 
 const OurTrust = () => {
   return (
     <div>
-      <section className="relative">
-        <div className="w-full h-[80vh] ">
-          <img
-            src={assets.bg6}
-            alt="About Image"
-            className="w-full h-[100%] object-cover"
-          />
-        </div>
-
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center font-bold text-3xl md:text-5xl">
-          <span className=" text-white text-3xl font-semibold">
-            How Trust Is
-          </span>
-          <br />
-          <span className="flex justify-center mt-2 text-[#a17e1e]">Built</span>
-        </div>
-      </section>
+      <Hero img={assets.bg6} title={'Our Trust Process At'} />
 
       <Discovery />
 
