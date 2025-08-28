@@ -42,7 +42,7 @@ const Navbar = () => {
     }
 
     return () => {
-      //window.removeEventListener("keydown", handleEscKey);
+      //window.removeEventListener("keydown", handleEscKey);    
       document.body.style.overflow = "auto";
     };
   }, [isMenuOpen]);
@@ -53,9 +53,9 @@ const Navbar = () => {
         hasScrolled ? "bg-[#1E305E] backdrop-blur-md text-white" : "bg-[#1E305E] text-white"
       }`}
     >
-      <div className="flex items-center justify-between">
+      <div className="flex items-center justify-between ">
         <img src={assets.logo} alt="logo" className="w-32" />
-
+ 
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex items-center gap-8 text-lg font-medium">
           <Link to="/">Find A Home</Link>
