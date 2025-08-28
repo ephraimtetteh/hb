@@ -69,7 +69,6 @@ import bg8 from "./images/care/bg8.jpg";
 import image4 from "./images/care/images3.jpg";
 import image5 from "./images/contact/image3.png";
 import bg9 from "./images/process/bg9.jpg";
-import team from "./images/process/team.png";
 import left from "./images/process/arrow-left.svg";
 import right from "./images/process/arrow-right.svg";
 import selection from "./images/process/selection.png";
@@ -94,7 +93,7 @@ import trust6 from './trust6.jpg'
 
 
 
-const assets = { bg9, team, left, right, selection,
+const assets = { bg9, left, right, selection,
     phase,
     phase1,
     phase2,
