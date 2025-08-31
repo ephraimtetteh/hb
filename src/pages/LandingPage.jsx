@@ -19,27 +19,38 @@ const LandingPage = () => {
       {/* Hero Section */}
 
      
-      <section className="flex flex-col sm:flex-row items-center h-[90vh]">
+      <section className="grid lg:grid-cols-1 items-center h-[90vh]">
 
         <img
           className="w-full h-[100%] sm:h-[640px] object-cover"
           src={images[currentImageIndex]}
           alt="Animation background"
         />
+        <h1 className="font-semibold absolute left-0 right-0 text-white m-auto text-center text-3xl w-[50%]"> " Our services to you is our dedication to <span className="text-6xl text-amber-200"> your worth ... </span> "</h1>
       </section>
 
       {/* Discovery Section */}
       <Discovery />
 
+      <div className="border-b-2 border-blue-50">
+        <div className='bg-[url("/story.svg")] bg-no-repeat bg-cover bg-center p-10 rounded m-auto my-20 text-white mx-10'>
+          <div>
+            <p className='font-semibold border rounded-full p-2 w-[11.5%] border-blue-900'>Our Core Values</p>
+            <h2 className='py-2 text-6xl font-semibold text-blue-300'>Trust, vision, Growth, commitment, Dedication</h2>
+            <button className='bg-white text-black px-4 py-2 hover:bg-transparent hover:border hover:border-white hover:text-white rounded'>Explore more</button>
+          </div>
+             </div>
+      </div>
+
       <section className="p-10">
         <div className="py-10">
-          <h2 className="font-bold text-3xl">Discover Aruna Property</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+          <h2 className="font-bold text-3xl">The Foundation</h2>
+          <p>We Stand On Values/ Vision/ Purpose</p>
         </div>
 
         <div className=" grid lg:grid-cols-3 sm:grid-cols-1 m-auto gap-4 ">
-          <div className="bg-slate-50 shadow p-2 rounded-xl h-[60vh] ">
-            <div className="h-[80%]">
+          <div className="bg-slate-50 shadow p-2 rounded-xl">
+            <div className="w-[100%]">
               <img
                 className="rounded-xl sm:rounded-xl h-[100%] w-[100%]"
                 src={assets.bg2}
@@ -47,37 +58,53 @@ const LandingPage = () => {
               />
 
               <div className="p-2">
-                <h2 className="font-bold">House 1</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur.</p>
+                 <div className="py-2">
+                  <h2 className="font-semibold text-2xl">Mission</h2>
+                  <p>We stand for</p>
+                </div>
+                <p>Creating a harmonized building construction experience and delivering quality services to those in the diaspora</p>
               </div>
             </div>
           </div>
 
-          <div className="bg-slate-50 shadow p-2 rounded-xl  h-[60vh] ">
-            <div className="h-[80%] ">
+          <div className="bg-slate-50 shadow p-2 rounded-xl">
+            <div className="w-[100%]">
               <img
-                className="rounded-xl sm:rounded-xl h-[100%]  "
+                className="rounded-xl sm:rounded-xl h-[100%] w-[100%]"
                 src={assets.bg2}
                 alt=""
               />
 
               <div className="p-2">
-                <h2 className="font-bold">House 1</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur.</p>
+                 <div className="py-2">
+                  <h2 className="font-semibold text-2xl">Vision</h2>
+                  <p>We stand to</p>
+                </div>
+                <p>Manifest clients vision into a reality</p>
               </div>
             </div>
           </div>
-          <div className="bg-slate-50 shadow p-2 rounded-xl  h-[60vh] ">
-            <div className="h-[80%]">
+
+        
+
+          <div className="bg-slate-50 shadow p-2 rounded-xl">
+            <div className="w-[100%]">
               <img
                 className="rounded-xl sm:rounded-xl h-[100%] w-[100%]"
-                src={assets.bg3}
+                src={assets.bg2}
                 alt=""
               />
 
               <div className="p-2">
-                <h2 className="font-bold">House 1</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur.</p>
+                <div className="py-2">
+                  <h2 className="font-semibold text-2xl">Goals</h2>
+                  <p >We stand for</p>
+                </div>
+                <p className="grid gap-2">Honest Builders will go to work on your behalf with your, 
+                  <span>1. Hard Earned Money</span> 
+                  <span>2. Vision and Plan</span> 
+                  <span>3. Deliver Results</span> 
+                </p>
               </div>
             </div>
           </div>
@@ -86,22 +113,22 @@ const LandingPage = () => {
 
       <section>
         <div>
-          <div className="flex   bg-black  m-10 text-white">
-            <div className="w-[50%]  md:w-1/2 py-4 flex  items-center justify-center ">
-              <img src={assets.bg10} alt="" />
+          <div className="grid lg:grid-cols-2 sm:grid-cols-1 bg-blue-950  m-10 text-white items-start justify-center">
+            <div className="lg:w-[100%] md:w-1/2">
+              <img src={assets.bg9} alt="" />
             </div>
 
-            <div className="w-[50%] p-10">
-              <form action="">
-                <div className="grid ">
+            <div className="w-[100%] p-10">
+              <form action="" className="">
+                <div className="grid gap-3">
                   <label htmlFor="" className="lock text-sm font-medium">
                     {" "}
                     Full Name
                   </label>
                   <input
-                    className="border text-white  mb-5 w-full px-3 py-2  border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 transition duration-150 ease-in-out resize-y text-sm"
+                    className="border text-white  mb-5 w-full p-3  border-gray-100 rounded shadow-sm focus:ring-purple-500 focus:border-purple-500 transition duration-150 ease-in-out resize-y text-sm"
                     type="text"
-                    placeholder="name"
+                    placeholder="Name"
                   />
                 </div>
 
@@ -111,9 +138,9 @@ const LandingPage = () => {
                     Email{" "}
                   </label>
                   <input
-                    className="border text-white  mb-5 w-full px-3 py-2  border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 transition duration-150 ease-in-out resize-y text-sm"
+                    className="border text-white  mb-5 w-full p-3  border-gray-100 rounded shadow-sm focus:ring-purple-500 focus:border-purple-500 transition duration-150 ease-in-out resize-y text-sm"
                     type="text"
-                    placeholder="email"
+                    placeholder="Email"
                   />
                 </div>
 
@@ -123,27 +150,30 @@ const LandingPage = () => {
                     Password{" "}
                   </label>
                   <input
-                    className="border text-white mb-5 w-full px-3 py-2  border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 transition duration-150 ease-in-out resize-y text-sm"
+                    className="border text-white mb-5 w-full p-3  border-gray-100 rounded shadow-sm focus:ring-purple-500 focus:border-purple-500 transition duration-150 ease-in-out resize-y text-sm"
                     type="text"
-                    placeholder="password"
+                    placeholder="Password"
                   />
                 </div>
 
                 <div className="grid">
                   <label
-                    htmlFor="mini-message"
+                    htmlFor="Subject"
                     className="block text-sm font-medium text-white mb-1"
                   >
                     Message
                   </label>
                   <textarea
-                    id="mini-message"
-                    name="message"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-purple-500 focus:border-purple-500 transition duration-150 ease-in-out resize-y text-sm"
+                    id="subject"
+                    name="Message"
+                    className="w-full p-10 border border-gray-100 rounded shadow-sm focus:ring-purple-500 focus:border-purple-500 transition duration-150 ease-in-out resize-y text-sm"
                     placeholder="Brief message..."
                     required
                   ></textarea>
                 </div>
+
+                <div className="my-4">
+                  <button className="bg-white text-black px-6 py-3 border-gray-50 border rounded-full">Submit</button></div>
               </form>
             </div>
           </div>

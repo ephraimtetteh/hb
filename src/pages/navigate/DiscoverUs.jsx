@@ -20,9 +20,8 @@ const DiscoverUs = () => {
               <h1>Our Services</h1>
             </div>
             <div className="w-2/3">
-              <p>
-                Honest Builders offers comprehensive building solutions with our
-                team managed quality control
+              <p className='font-semibold'>
+                " Our services to you is our dedication to your worth ... "
               </p>
             </div>
           </div>
