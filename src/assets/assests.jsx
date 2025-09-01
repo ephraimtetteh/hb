@@ -9,6 +9,7 @@ import bgAbout from "./images/about/bg.jpg";
 import back from "./images/about/back.jpg";
 import started from "./images/care/started.svg";
 import map from "./images/contact/map.svg";
+import gold from "./images/contact/image3.png"
 import accra from "./images/home/accra.svg";
 import heart from "./images/home/heart.svg";
 import bono from "./images/home/bono.jpg";
@@ -181,7 +182,8 @@ const assets = { bg9, team, left, right, selection,
     trust3,
     trust4,
     trust5,
-    trust6
+    trust6,
+    gold
 
 };
 

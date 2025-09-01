@@ -8,6 +8,7 @@ import OurTrust from './pages/navigate/OurTrust.jsx'
 import OurProcess from './pages/navigate/OurProcess.jsx'
 import CustomerCare from './pages/navigate/CustomerCare.jsx'
 import DiscoverUs from './pages/navigate/DiscoverUs.jsx'
+import Contact from "./pages/navBarPages/Contact.jsx";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/process" element={<OurProcess />} />
           <Route path="/customercare" element={<CustomerCare />} />
           <Route path="/services" element={<DiscoverUs />} />
+          <Route path="/contact" element={<Contact/>} />
         </Routes>
         <Footer />
       </BrowserRouter>
