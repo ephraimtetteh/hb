@@ -7,7 +7,7 @@ const AboutUs = () => {
   return (
     <div>
       {/* Hero Section */}
-      <Hero img={assets.bg1} title={'Discover Us At'} />
+      <Hero img={assets.bg1} title={"Discover Us At"} />
 
       {/* Discovery Section */}
       <Discovery />
@@ -52,9 +52,9 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <div>
-          <div className="border-b border-blue-200 p-10">
-            <div className="m-auto grid lg:grid-cols-4 sm:grid-cols-1 gap-2">
+        <div className="border-b border-blue-100 pb-10">
+          <div className="">
+            <div className="m-auto grid lg:grid-cols-4 sm:grid-cols-1 gap-6">
               <div className="mx-auto grid items-center bg-gray-200 shadow-lg outline outline-none rounded">
                 <div className="rounded sm:rounded">
                   <img src={assets.team4} alt="" className="m-auto" />
@@ -208,20 +208,20 @@ const AboutUs = () => {
       </section>
 
       {/* Our Story Section */}
-      <section className="flex flex-row bg-linear-to-r from-black to-100% items-start justify-center bg-[url('/story.svg')] bg-no-repeat bg-right py-40 px-10 bg-contain">
+      <section className="grid sm:grid-cols-1 items-start justify-center bg-[url('/story.svg')] bg-no-repeat bg-right py-40 px-10 bg-contain border-b border-blue-50 p-10">
         <div className="">
           <h1 className="lg:text-[44px] font-semibold ">Our Story</h1>
           <p className="mt-2 text-xs lg:text-[16px] font-normal">
-            FILLING A NEED (This is a wife's commitment)
+            FILLING A NEED (A wife's Testimonial)
           </p>
           <div className="mt-12">
             <p className="text-xs lg:leading-snug lg:text-[18px] font-normal w-[50%]">
               If you know my husband, he's a servant leader who knows he's
               called to serve. No matter the need—whether it is one-on-one
               coaching, mentoring young men, serving the communities, or simply
-              being a good father—it is his calling. “He'll tell you I'm
+              Being a good father—it is his calling. “he’ll tell you I'm
               listening and following the voice of God.” His 20-plus years in a
-              leadership-driven environment and manufacturing landscape have
+              A leadership-driven environment and a manufacturing landscape have
               prepared him to get you the results you desire.
             </p>
           </div>
@@ -231,9 +231,9 @@ const AboutUs = () => {
       </section>
 
       <div className="p-10">
-        <div className="min-h-screen w-full bg-gray-100 flex flex-col items-center justify-center p-4 font-sans">
+        <div className="min-h-screen w-full flex flex-col items-center justify-center font-sans">
           {/* Main title for the recommendation section */}
-          <h1 className="text-4xl font-bold text-gray-800 mb-12">
+          <h1 className="text-4xl sm:text-2xl text-center p-3 font-bold text-gray-800 mb-12">
             What Our Clients Say
           </h1>
 
@@ -260,14 +260,11 @@ const AboutUs = () => {
             {/* Content Area */}
             <div className="flex flex-col items-center text-center px-12">
               {/* Testimonial Text */}
-              <p className="italic text-gray-700 text-lg mb-6 leading-relaxed">
+              <p className=" text-gray-700 text-lg mb-6 leading-relaxed">
                 If you know my husband, he's a servant leader who knows he's
-              called to serve. No matter the need—whether it is one-on-one
-              coaching, mentoring young men, serving the communities, or simply
-              being a good father—it is his calling. “He'll tell you I'm
-              listening and following the voice of God.” His 20-plus years in a
-              leadership-driven environment and manufacturing landscape have
-              prepared him to get you the results you desire.
+                called to serve. No matter the need—whether it is one-on-one
+                coaching, mentoring young men, serving the communities, or
+                simply being a good father—it is his calling.
               </p>
 
               {/* Author's Image */}

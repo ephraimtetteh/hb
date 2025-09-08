@@ -2,9 +2,10 @@ import React, { useEffect, useState } from "react";
 import assets from "../assets/assests.jsx";
 import Discovery from "../components/Discovery.jsx";
 import Questions from "../components/Questions.jsx"
+import Form from "../components/Form.jsx";
 
 const LandingPage = () => {
-  const images = [assets.bg5, assets.bg2, assets.bg3, assets.bg5];
+  const images = [assets.bg5, assets.bg2, assets.bg3, assets.bg5, assets.hbh2];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   useEffect(() => {
@@ -17,8 +18,6 @@ const LandingPage = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-
-     
       <section className="grid lg:grid-cols-1 items-center h-[90vh]">
 
         <img
@@ -26,17 +25,17 @@ const LandingPage = () => {
           src={images[currentImageIndex]}
           alt="Animation background"
         />
-        <h1 className="font-semibold absolute left-0 right-0 text-white m-auto text-center text-3xl w-[50%]"> " Our services to you is our dedication to <span className="text-6xl text-amber-200"> your worth ... </span> "</h1>
+        <h1 className="font-semibold absolute left-0 right-0 text-white m-auto text-center text-3xl w-[50%] sm:text-1xl sm:w-[80%]"> " Our services to you is our dedication to <span className="text-6xl text-amber-200 sm:text-3xl sm:w-[80%]"> your worth ... </span> "</h1>
       </section>
 
       {/* Discovery Section */}
       <Discovery />
 
       <div className="border-b-2 border-blue-50">
-        <div className='bg-[url("/story.svg")] bg-no-repeat bg-cover bg-center p-10 rounded m-auto my-20 text-white mx-10'>
+        <div className='bg-[url("/story.svg")] bg-no-repeat bg-cover bg-center p-10 rounded m-auto my-20 text-white mx-10 '>
           <div>
             <p className='font-semibold border rounded-full p-2 w-[11.5%] border-blue-900'>Our Core Values</p>
-            <h2 className='py-2 text-6xl font-semibold text-blue-300'>Trust, vision, Growth, commitment, Dedication</h2>
+            <h2 className='py-2 text-4xl font-semibold text-blue-300 sm:text-2xl sm:font-medium'>Trust, vision, Growth, commitment, Dedication</h2>
             <button className='bg-white text-black px-4 py-2 hover:bg-transparent hover:border hover:border-white hover:text-white rounded'>Explore more</button>
           </div>
              </div>
@@ -53,7 +52,7 @@ const LandingPage = () => {
             <div className="w-[100%]">
               <img
                 className="rounded-xl sm:rounded-xl h-[100%] w-[100%]"
-                src={assets.bg2}
+                src={assets.hb3}
                 alt=""
               />
 
@@ -91,7 +90,7 @@ const LandingPage = () => {
             <div className="w-[100%]">
               <img
                 className="rounded-xl sm:rounded-xl h-[100%] w-[100%]"
-                src={assets.bg2}
+                src={assets.hbh2}
                 alt=""
               />
 
@@ -111,74 +110,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-      <section>
-        <div>
-          <div className="grid lg:grid-cols-2 sm:grid-cols-1 bg-blue-950  m-10 text-white items-start justify-center">
-            <div className="lg:w-[100%] md:w-1/2">
-              <img src={assets.bg9} alt="" />
-            </div>
-
-            <div className="w-[100%] p-10">
-              <form action="" className="">
-                <div className="grid gap-3">
-                  <label htmlFor="" className="lock text-sm font-medium">
-                    {" "}
-                    Full Name
-                  </label>
-                  <input
-                    className="border text-white  mb-5 w-full p-3  border-gray-100 rounded shadow-sm focus:ring-purple-500 focus:border-purple-500 transition duration-150 ease-in-out resize-y text-sm"
-                    type="text"
-                    placeholder="Name"
-                  />
-                </div>
-
-                <div className="grid">
-                  <label htmlFor="" className="lock text-sm font-medium">
-                    {" "}
-                    Email{" "}
-                  </label>
-                  <input
-                    className="border text-white  mb-5 w-full p-3  border-gray-100 rounded shadow-sm focus:ring-purple-500 focus:border-purple-500 transition duration-150 ease-in-out resize-y text-sm"
-                    type="text"
-                    placeholder="Email"
-                  />
-                </div>
-
-                <div className="grid">
-                  <label htmlFor="" className="lock text-sm font-medium">
-                    {" "}
-                    Password{" "}
-                  </label>
-                  <input
-                    className="border text-white mb-5 w-full p-3  border-gray-100 rounded shadow-sm focus:ring-purple-500 focus:border-purple-500 transition duration-150 ease-in-out resize-y text-sm"
-                    type="text"
-                    placeholder="Password"
-                  />
-                </div>
-
-                <div className="grid">
-                  <label
-                    htmlFor="Subject"
-                    className="block text-sm font-medium text-white mb-1"
-                  >
-                    Message
-                  </label>
-                  <textarea
-                    id="subject"
-                    name="Message"
-                    className="w-full p-10 border border-gray-100 rounded shadow-sm focus:ring-purple-500 focus:border-purple-500 transition duration-150 ease-in-out resize-y text-sm"
-                    placeholder="Brief message..."
-                    required
-                  ></textarea>
-                </div>
-
-                <div className="my-4">
-                  <button className="bg-white text-black px-6 py-3 border-gray-50 border rounded-full">Submit</button></div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
+      <Form />
 
 <section>
         {/* Question Section */}

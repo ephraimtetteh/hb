@@ -7,12 +7,12 @@ import Hero from '../../components/Hero';
 const OurTrust = () => {
   return (
     <div>
-      <Hero img={assets.bg6} title={'Our Trust Process At'} />
+      <Hero img={assets.bg6} title={"Our Trust Process At"} />
 
       <Discovery />
 
-      <div className="w-2/3 p-10 items-center m-auto">
-        <p className="text-center">
+      <div className="w-3/3 p-10 items-center m-auto md:w-3/3 md:p-2 sm:w-3/3 sm:p-2">
+        <p className="text-center py-10">
           At Honest Builders, we know your home is the most significant
           investment you'll ever make. Whether this is your first time or your
           fifth, you're the reason we've built our business on the foundation of
@@ -47,14 +47,14 @@ const OurTrust = () => {
           </div>
         </div>
       </div>
-      <div className="w-2/3 p-10 items-center m-auto border-b-2 border-gray-200">
-        <p className="text-center p-3">
-          "The heart of man is deceiful above all things," and trust is hard to
+      <div className="w-3/3 p-10 items-center m-auto border-b-2 border-gray-200">
+        <p className="text-center py-10">
+          "The heart of man is deceitful above all things," and trust is hard to
           find, so we've dedicated ourselves to doing things right by you. Your
-          peace of mind is very import to us, so we act with integrity and
+          peace of mind is significant to us, so we act with integrity and
           trustworthiness as core values in our relationship, and we stress the
-          importance of every detail. From the initial start of to completion,
-          we ensure your hard earned family resources aren't in the wrong hands.
+          importance of every detail. From the initial start to completion, we
+          ensure your hard-earned family resources aren't in the wrong hands.
         </p>
 
         <div className="bg-[#1e305e] p-6 border border-amber-400 rounded-full w-85 m-auto items-center gap-4">
@@ -73,7 +73,7 @@ const OurTrust = () => {
 
       {/* trust process */}
       <div className="container m-auto p-10 items-center justify-center border-gray-200 border-b-2">
-        <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-3 m-auto items-center justify-center p-4">
+        <div className="grid lg:grid-cols-2 sm:grid-cols-1 gap-6 m-auto items-center justify-center p-4">
           <div className="bg-blue-50 shadow h-[80vh]">
             <img
               src={assets.trust1}
@@ -82,7 +82,9 @@ const OurTrust = () => {
             />
             <p className="text-center p-3">
               Floor plans designed for{" "}
-              <span className="font-semibold text-[#1e305e]">ACCOUNTABILITY</span>
+              <span className="font-semibold text-[#1e305e]">
+                ACCOUNTABILITY
+              </span>
             </p>
           </div>
           <div className="bg-blue-50 shadow h-[80vh]">
@@ -142,9 +144,9 @@ const OurTrust = () => {
           </div>
         </div>
       </div>
-        <div>
-          <Card />
-        </div>
+      <div>
+        <Card />
+      </div>
     </div>
   );
 }

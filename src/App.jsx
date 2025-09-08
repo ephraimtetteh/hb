@@ -9,6 +9,7 @@ import OurProcess from './pages/navigate/OurProcess.jsx'
 import CustomerCare from './pages/navigate/CustomerCare.jsx'
 import DiscoverUs from './pages/navigate/DiscoverUs.jsx'
 import Contact from "./pages/navBarPages/Contact.jsx";
+import Request from './pages/Request.jsx'
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
           <Route path="/customercare" element={<CustomerCare />} />
           <Route path="/services" element={<DiscoverUs />} />
           <Route path="/contact" element={<Contact/>} />
+          <Route path="/requests" element={<Request />} />
         </Routes>
         <Footer />
       </BrowserRouter>

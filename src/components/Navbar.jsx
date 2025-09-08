@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import assets from '../assets/assests'
-import { Link } from "react-router-dom";
+import { Link, Links } from "react-router-dom";
 import { FiMenu, FiX } from "react-icons/fi";
 
 const Navbar = () => {
@@ -54,13 +54,15 @@ const Navbar = () => {
       }`}
     >
       <div className="flex items-center justify-between ">
-        <img src={assets.logo} alt="logo" className="w-32" />
+        <Link to={'/'}>
+          <img src={assets.logo} alt="logo" className="w-32" />
+        </Link>
  
         {/* Desktop Navigation Links */}
         <div className="hidden md:flex items-center gap-8 text-lg font-medium">
-          <Link to="/">Find A Home</Link>
-          <Link to="/services">Communities</Link>
-          <Link to="/about">Plan & Design</Link>
+          <Link to="/">Build A Home</Link>
+          <Link to="/community">Communities</Link>
+          <Link to="/plan">Plan & Design</Link>
           <Link to="/contact">Contact Us</Link>
         </div>
 
@@ -71,7 +73,7 @@ const Navbar = () => {
 
         {/* Mobile Hamburger Icon */}
         <button
-          className="md:hidden p-2 text-gray-800 focus:outline-none"
+          className="md:hidden p-2 text-blue-400 focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
@@ -80,7 +82,7 @@ const Navbar = () => {
 
       {/* Mobile Slide-in Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-1/2 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 md:hidden overflow-x-hidden ${
+        className={`fixed top-0 right-0 h-full w-1/2 bg-white text-black shadow-lg transform transition-transform duration-300 ease-in-out z-50 md:hidden overflow-x-hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >

@@ -90,6 +90,11 @@ import trust3 from './trust3.jpg'
 import trust4 from './trust4.jpg'
 import trust5 from './trust5.jpg'
 import trust6 from './trust6.jpg'
+import hb1 from './hb1.jpg'
+import hb2 from './hb2.jpg'
+import hb3 from './hb3.jpg'
+import hbh1 from './hbh1.jpg'
+import hbh2 from './hbh1.jpg'
 
 
 
@@ -98,6 +103,8 @@ const assets = { bg9, left, right, selection,
     phase,
     phase1,
     phase2,
+    hbh1,
+    hbh2,
     construct,
     arrowDownBold,
     pictures,
@@ -182,7 +189,10 @@ const assets = { bg9, left, right, selection,
     trust4,
     trust5,
     trust6,
-    gold
+    gold,
+    hb1,
+    hb2,
+    hb3
 
 };
 
