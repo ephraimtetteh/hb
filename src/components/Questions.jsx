@@ -12,7 +12,7 @@ const faqData = [
     id: 2,
     question: "How does it work?",
     answer:
-      "We aim to streamline the construction process by eliminating family mishaps and delivering our clients with sustainable housing for those in the diaspora. Building a home may be one of the most significant investments you will ever make. Before you build, please research the builder's background and reputation with customers, as well as their years in business. ",
+      "Building a home may be one of the most significant investments you will ever make. Before you build, please research the builder's background and reputation with customers, as well as their years in business. We aim to streamline the construction process by eliminating family mishaps and delivering our clients with sustainable housing for those in the diaspora.",
   },
   {
     id: 3,

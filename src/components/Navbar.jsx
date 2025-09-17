@@ -59,7 +59,7 @@ const Navbar = () => {
         </Link>
  
         {/* Desktop Navigation Links */}
-        <div className="hidden md:flex items-center gap-8 text-lg font-medium">
+        <div className="hidden md:hidden lg:flex items-center gap-8 text-lg font-medium">
           <Link to="/">Build A Home</Link>
           <Link to="/community">Communities</Link>
           <Link to="/plan">Plan & Design</Link>
@@ -73,16 +73,16 @@ const Navbar = () => {
 
         {/* Mobile Hamburger Icon */}
         <button
-          className="md:hidden p-2 text-blue-400 focus:outline-none"
+          className="lg:hidden p-2 text-blue-400 focus:outline-none"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
-          {isMenuOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+          {isMenuOpen ? <FiX size={24} /> : <div className="flex gap-2">Menu <FiMenu size={24} /> </div>}
         </button>
       </div>
 
       {/* Mobile Slide-in Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-1/2 bg-white text-black shadow-lg transform transition-transform duration-300 ease-in-out z-50 md:hidden overflow-x-hidden ${
+        className={`fixed top-0 right-0 h-full w-1/2 bg-white text-black shadow-lg transform transition-transform duration-300 ease-in-out z-50 overflow-x-hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -94,17 +94,17 @@ const Navbar = () => {
               className="p-2 hover:bg-gray-100 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
-              Home
+              Build A Home
             </Link>
             <Link
               to="/services"
               className="p-2 hover:bg-gray-100 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
-              Services
+              Communities
             </Link>
             <Link
-              to="/about"
+              to="/communities"
               className="p-2 hover:bg-gray-100 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
@@ -115,13 +115,13 @@ const Navbar = () => {
               className="p-2 hover:bg-gray-100 rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
-              Contact Us
+              Plan & Design
             </Link>
 
-            {/* Mobile Button */}
+            {/* Mobile Button
             <div className="pt-4">
               <button>get</button>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

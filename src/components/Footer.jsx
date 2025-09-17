@@ -13,7 +13,7 @@ import assets from "../assets/assests";
 
 const Footer = () => {
   return (
-    <div className="container mx-auto pt-10 pb-5 overflow-x-hidden bg-[#1E305E] text-white p-10">
+    <div className="container mx-auto w-[100%] pt-10 pb-5 overflow-x-hidden bg-[#1E305E] text-white p-10">
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-12">
         <div className="flex flex-col gap-4">
           <img src={assets.logo} alt="logo" className="w-78" />

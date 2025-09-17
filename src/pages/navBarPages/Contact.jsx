@@ -2,6 +2,7 @@ import assets from "../../assets/assests";
 import Discovery from "../../components/Discovery";
 import Form from "../../components/Form";
 import Hero from "../../components/Hero";
+import Card from '../../components/Card'
 import {
   FaMapMarkerAlt,
   FaPhone,
@@ -17,7 +18,7 @@ const Contact = () => {
       <section>
         {/* Left Section */}
         <Discovery />
-        <div className="grid grid-cols-2 sm:grid-cols-1">
+        <div className="grid lg:grid-cols-2 sm:grid-cols-1">
           <div className="text-black  m-10 mt-10">
             <div className="p ">
               <h2 className="font-semibold text-xl items-center justify-center ">
@@ -51,6 +52,7 @@ const Contact = () => {
            <Form />
           </div>
         </div>
+        <Card title={'Apply to Carrer Services'} text={'Are you a professional at what you do, do you have the skills, apply to any of our carrer services.'} cardBtn={'Apply'}/>
       </section>
     </>
   );

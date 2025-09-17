@@ -4,7 +4,7 @@ const Hero = ({img, title}) => {
   return (
     <div>
       <section className="relative">
-        <div className="w-full h-[80vh]">
+        <div className="w-full h-[100vh]">
           <img
             src={img}
             alt="About Image"

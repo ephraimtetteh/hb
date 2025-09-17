@@ -39,7 +39,7 @@ const DiscoverUs = () => {
             Services We Provide
           </h2>
 
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4">
             <article className="p-5 bg-sky-50">
               <h4 className="text-1xl font-medium py-3">
                 Renovation and Remodeling
@@ -102,6 +102,7 @@ const DiscoverUs = () => {
           text={
             "We back ourselves up to deliver and bring the best out of anything. Making a choice on quality should never be questioned."
           }
+          cardBtn={'Contact Us'}
         />
       </div>
     </div>

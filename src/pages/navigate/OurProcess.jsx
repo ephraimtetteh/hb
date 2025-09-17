@@ -13,8 +13,8 @@ const OurProcess = () => {
     <div>
       <Hero img={assets.bg9} title={"Our Process At"} />
       <Discovery />
-      <div className="w-2/3 p-10 items-center m-auto">
-        <p className="text-center p-3">
+      <div className="lg:w-2/3 p-10 items-center m-auto">
+        <p className="text-center">
           Honesty and transparency are the keys to your peace of mind when
           building your dream home. That's why Honest Builders exists. We pride
           ourselves on being proactive and walking alongside your vision for
@@ -23,8 +23,8 @@ const OurProcess = () => {
         </p>
       </div>
       <div className="p-40 items-center m-auto bg-[url(/team.png)] bg-no-repeat bg-center bg-cover ">
-        <div className="m-auto bg-[#0808081f] p-5 w-2/3">
-          <p className="text-center p-3 m-auto text-white">
+        <div className="m-auto bg-[#0808081f] lg:w-2/3 sm:w-[100%]">
+          <p className="text-center p-3 text-white">
             From selecting the prefect floor plan to weekly progress updates,
             our team will keep you informd as though you are on site
           </p>
@@ -37,7 +37,7 @@ const OurProcess = () => {
         <h2 className="text-center text-3xl sm:text-1xl font-semibold p-4">
           Our Service Process
         </h2>
-        <p className="text-center">
+        <p className="text-center px-10">
           A streamlined process that connects builders with trusted homes
           through Honest builders team
         </p>
@@ -95,8 +95,8 @@ const OurProcess = () => {
       {/* Our process breakdown */}
 
       <div>
-        <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-4 items-start justify-center mx-auto p-10 border-b border-gray-200">
-          <div>
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-4 items-start justify-center mx-auto p-10 border-b border-gray-200 overflow-auto">
+          <div className="sm:w-xl">
             <img src={assets.booking} alt="" />
           </div>
 
@@ -180,7 +180,7 @@ const OurProcess = () => {
           </div>
         </div>
 
-        <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-4 items-start justify-center mx-auto p-10 border-b border-gray-200">
+        <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 items-start justify-center mx-auto p-10 border-b border-gray-200">
           <div>
             <img src={assets.project} alt="" />
           </div>
@@ -263,8 +263,7 @@ const OurProcess = () => {
           </div>
         </div>
 
-        <div
-          className="grid lg:grid-cols-2 md:grid-cols-1 gap-4 items-start justify-center mx-auto p-10 border-b border-gray-200">
+        <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-4 items-start justify-center mx-auto p-10 border-b border-gray-200">
           <div className="">
             <div className=" py-2 font-semibold text-2xl">
               <h2>Real-Time Tracking</h2>
@@ -353,13 +352,11 @@ const OurProcess = () => {
         <h2 className="text-center text-3xl sm:text-1xl font-semibold p-4">
           Our Journey
         </h2>
-        <p className="text-center">
-          Well planned Journey to Your Dream Home
-        </p>
+        <p className="text-center">Well planned Journey to Your Dream Home</p>
 
-        <div className="flex p-10 items-center justify-center m-auto gap-12 ">
-          <div className="grid gap-20 border-r-2 border-grey">
-            <div className="p-6 bg-slate-50 hover:bg-slate-100 rounded shadow w-[80%]">
+        <div className="lg:flex lg:p-10 sm:py-2 md:py-2 items-center justify-center m-auto lg:gap-12">
+          <div className="grid gap-10 lg:border-r-2 lg:border-gray-400 mb-10">
+            <div className="p-6 bg-slate-50 hover:bg-slate-100 rounded shadow ">
               <span className="bg-blue-950 rounded-full py-2 px-2 text-white text-[12px]">
                 01
               </span>
@@ -392,7 +389,7 @@ const OurProcess = () => {
               </p>
             </div>
 
-            <div className="p-6 bg-slate-50 hover:bg-slate-100 rounded shadow w-[80%]">
+            <div className="p-6 bg-slate-50 hover:bg-slate-100 rounded shadow">
               <span className="bg-blue-950 rounded-full py-2 px-2 m-auto text-white text-[12px]">
                 02
               </span>
@@ -420,8 +417,8 @@ const OurProcess = () => {
           </div>
 
           <div className="justify-content items-center">
-            <div className="grid gap-20">
-              <div className="p-6 bg-slate-50 hover:bg-slate-100 rounded shadow w-[80%]">
+            <div className="grid gap-10">
+              <div className="p-6 bg-slate-50 hover:bg-slate-100 rounded shadow">
                 <span className="bg-blue-950 rounded-full py-2 px-2 text-white text-[12px]">
                   03
                 </span>
@@ -446,7 +443,13 @@ const OurProcess = () => {
         </div>
       </div>
 
-      <Card />
+      <Card
+        title={"Book a Consultation"}
+        text={
+          "Take action now. Talk to our customer service specialist for any questions and clarity"
+        }
+        cardBtn={"Book Now"}
+      />
     </div>
   );
 }

@@ -1,14 +1,21 @@
 import React from 'react'
 
 const Form = () => {
+  // const [info, setInfo]= useState({
+  //   name: '', 
+  //   email: '',
+  //   address: ''
+  // }
+
+  //)
   return (
     <div className="bg-sky-50">
-      <div className="w-[70%] m-auto py-5">
+      <div className="lg:w-[70%] sm:w-[100%] m-auto py-5 grid sm:grid-cols-1">
         <div className="p-10">
           <h2 className="text-3xl text-center font-semibold py-2">
             Contact Us Here
           </h2>
-          <p className="text-center">
+          <p className="text-center sm:w-[100%] sm:px-2">
             For information or questions about our new homes or communities,
             please fill out the form below. Someone will respond to you
             promptly. For Customer Care requests, please use the Customer Care
