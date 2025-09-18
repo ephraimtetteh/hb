@@ -3,8 +3,8 @@ import Form from '../components/Form';
 
 const Request = () => {
   return (
-    <div className="container flex justify-center items-start p-20 gap-8">
-      <div className="w-[60%]">
+    <div className="container lg:flex justify-center sm:items-center lg:items-start p-10 gap-8 m-auto">
+      <div className="lg:w-[60%]">
         <div>
           <h1 className="text-4xl font-bold py-4">CUSTOMER CARE</h1>
           <span className="border-b-2 border-gray-200 w-[50%] m-auto h-1 bg-black ">
@@ -21,7 +21,7 @@ const Request = () => {
           </span>
         </div>
 
-        <h3 className="text-2xl font-semibold py-4">
+        <h3 className="lg:text-2xl font-semibold py-4">
           WHAT KIND OF SUPPORT IS AVAILABLE?
         </h3>
         <div>
@@ -42,7 +42,7 @@ const Request = () => {
         </div>
         <Form />
       </div>
-      <div className="w-[30%] grid gap-3">
+      <div className="lg:w-[30%] grid gap-3 mt-3">
         <article className="bg-gray-50 p-10">
           <h4 className="py-3 font-semibold text-1xl">Emergency Service</h4>
           <p>

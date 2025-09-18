@@ -6,6 +6,7 @@ import { RiTeamLine } from "react-icons/ri";
 import { CiTimer } from "react-icons/ci";
 import { TbBrandBooking } from "react-icons/tb";
 import Discovery from '../../components/Discovery';
+import { Link } from 'react-router-dom';
 
 const DiscoverUs = () => {
   return (
@@ -44,6 +45,11 @@ const DiscoverUs = () => {
               <h4 className="text-1xl font-medium py-3">
                 Renovation and Remodeling
               </h4>
+              <img
+                src={assets.building}
+                alt=""
+                className="rounded-2xl pb-2"
+              />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
                 nihil eaque quas sequi, aliquid autem!
@@ -51,6 +57,11 @@ const DiscoverUs = () => {
             </article>
             <article className="p-5 bg-sky-50">
               <h4 className="text-1xl font-medium py-3">Electrical</h4>
+              <img
+                src={assets.electricals}
+                alt=""
+                className="rounded-2xl pb-2"
+              />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
                 nihil eaque quas sequi, aliquid autem!
@@ -58,6 +69,11 @@ const DiscoverUs = () => {
             </article>
             <article className="p-5 bg-sky-50">
               <h4 className="text-1xl font-medium py-3">Plumbing</h4>
+              <img
+                src={assets.plumbing}
+                alt=""
+                className="rounded-2xl pb-2"
+              />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
                 nihil eaque quas sequi, aliquid autem!
@@ -67,6 +83,11 @@ const DiscoverUs = () => {
               <h4 className="text-1xl font-medium py-3">
                 Glass and Window installation and repairs
               </h4>
+              <img
+                src={assets.installation}
+                alt=""
+                className="rounded-2xl pb-2"
+              />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
                 nihil eaque quas sequi, aliquid autem!
@@ -76,6 +97,11 @@ const DiscoverUs = () => {
               <h4 className="text-1xl font-medium py-3">
                 Carpentry work and installation
               </h4>
+              <img
+                src={assets.capentry}
+                alt=""
+                className="rounded-2xl pb-2"
+              />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
                 nihil eaque quas sequi, aliquid autem!
@@ -85,6 +111,11 @@ const DiscoverUs = () => {
               <h4 className="text-1xl font-medium py-3">
                 Land inquiries and purchasing
               </h4>
+              <img
+                src={assets.land}
+                alt=""
+                className="rounded-2xl pb-2"
+              />
               <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
                 nihil eaque quas sequi, aliquid autem!
@@ -92,9 +123,13 @@ const DiscoverUs = () => {
             </article>
           </div>
 
-          <div className='m-auto py-4'>
-            <button className='bg-sky-700 text-white p-3 rounded'>Request Our Service</button>
-            </div>
+          <div className="m-auto py-4">
+            <Link to={'/contact'}>
+              <button className="bg-sky-700 text-white p-3 rounded">
+              Request Our Service
+            </button>
+            </Link>
+          </div>
         </div>
 
         <Card
@@ -102,7 +137,7 @@ const DiscoverUs = () => {
           text={
             "We back ourselves up to deliver and bring the best out of anything. Making a choice on quality should never be questioned."
           }
-          cardBtn={'Contact Us'}
+          cardBtn={"Contact Us"}
         />
       </div>
     </div>

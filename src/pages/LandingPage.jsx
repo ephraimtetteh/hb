@@ -18,14 +18,14 @@ const LandingPage = () => {
   return (
     <div className="w-full">
       {/* Hero Section */}
-      <section className="grid lg:grid-cols-1 items-center h-[90vh]">
+      <section className="grid lg:grid-cols-1 items-center h-[90vh] w-full">
 
         <img
           className="w-full h-[100%] sm:h-[640px] object-cover"
           src={images[currentImageIndex]}
           alt="Animation background"
         />
-        <h1 className="font-semibold absolute left-0 right-0 text-white m-auto text-center text-3xl w-[50%] sm:text-1xl sm:w-[80%]"> " Our services to you is our dedication to <span className="text-6xl text-amber-200 sm:text-3xl sm:w-[80%]"> your worth ... </span> "</h1>
+        <h1 className="font-semibold absolute left-0 right-0 text-white m-auto text-center text-3xl lg:w-[50%] sm:text-1xl sm:w-[80%]"> " Our services to you is our dedication to <span className="lg:text-6xl text-amber-200 sm:text-3xl sm:w-[80%]"> your worth ... </span> "</h1>
       </section>
 
       {/* Discovery Section */}

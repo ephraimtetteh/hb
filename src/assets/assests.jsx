@@ -95,7 +95,13 @@ import hb2 from './hb2.jpg'
 import hb3 from './hb3.jpg'
 import hbh1 from './hbh1.jpg'
 import hbh2 from './hbh1.jpg'
-
+import electricals from './electricals.jpg'
+import building from './construction1.jpg'
+import painting from './painting.jpg'
+import plumbing from './plumbing.jpg'
+import capentry from './capentry.jpg'
+import installation from './installation.jpg'
+import land from './land.jpg'
 
 
 
@@ -105,6 +111,13 @@ const assets = { bg9, left, right, selection,
     phase2,
     hbh1,
     hbh2,
+    building,
+    painting,
+    land,
+    plumbing,
+    capentry,
+    installation,
+    electricals,
     construct,
     arrowDownBold,
     pictures,

@@ -55,7 +55,7 @@ const Navbar = () => {
     >
       <div className="flex items-center justify-between ">
         <Link to={'/'}>
-          <img src={assets.logo} alt="logo" className="w-32" />
+          <img src={assets.logo} alt="logo" className="w-42" />
         </Link>
  
         {/* Desktop Navigation Links */}
@@ -82,7 +82,7 @@ const Navbar = () => {
 
       {/* Mobile Slide-in Menu */}
       <div
-        className={`fixed top-0 right-0 h-full w-1/2 bg-white text-black shadow-lg transform transition-transform duration-300 ease-in-out z-50 overflow-x-hidden ${
+        className={`fixed top-0 right-0 h-full w-1/2 bg-[#1e305e] text-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 overflow-x-hidden ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
@@ -91,28 +91,28 @@ const Navbar = () => {
           <div className="flex flex-col space-y-6 mt-4 text-lg font-semibold">
             <Link
               to="/"
-              className="p-2 hover:bg-gray-100 rounded-md"
+              className="p-2 hover:bg-blue-200 hover:text-black rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
               Build A Home
             </Link>
             <Link
               to="/services"
-              className="p-2 hover:bg-gray-100 rounded-md"
+              className="p-2 hover:bg-blue-200 hover:text-black rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
               Communities
             </Link>
             <Link
               to="/communities"
-              className="p-2 hover:bg-gray-100 rounded-md"
+              className="p-2 hover:bg-blue-200 hover:text-black rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
               About
             </Link>
             <Link
               to="/contact"
-              className="p-2 hover:bg-gray-100 rounded-md"
+              className="p-2 hover:bg-blue-200 hover:text-black rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
               Plan & Design

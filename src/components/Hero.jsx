@@ -12,12 +12,12 @@ const Hero = ({img, title}) => {
           />
         </div>
 
-        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center font-bold text-3xl md:text-5xl">
-          <span className=" text-white text-3xl font-semibold">
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center font-bold md:text-5xl">
+          <span className=" text-white lg:text-3xl sm:text-2xl font-semibold">
             {title}
           </span>
           <br />
-          <span className="flex justify-center mt-2 text-[#a17e1e]">
+          <span className="flex justify-center sm:text-3xl mt-2 text-[#a17e1e]">
             Honest Builders
           </span>
         </div>
