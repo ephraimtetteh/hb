@@ -22,7 +22,7 @@ const DiscoverUs = () => {
             </div>
             <div className="w-2/3">
               <p className="font-semibold">
-                " Our services to you is our dedication to your worth ... "
+                We offer engineering, planning, design, construction, and maintainace services for homes and new builds, including prefabricated and temporary structures, eletrical, plumbing, AC, residential construction and emergency repairs nation wide 
               </p>
             </div>
           </div>
