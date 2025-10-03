@@ -7,7 +7,7 @@ const CustomerCare = () => {
   return (
     <div>
       {/* Hero Section */}
-      <Hero img={assets.bg10} title={'Customer Care'}/>
+      <Hero img={assets.bg10} title={'Together, we secure assets, elevate customers and help protect future assets'}/>
 
       {/* Discovery Section */}
       <Discovery />
