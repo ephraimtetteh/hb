@@ -37,13 +37,13 @@ const DiscoverUs = () => {
 
         <div className="p-10 m-auto">
           <h2 className="text-2xl font-semibold text-center p-5">
-            Services We Provide
+            Services and Capabilities
           </h2>
 
           <div className="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4">
             <article className="p-5 bg-sky-50">
               <h4 className="text-1xl font-semibold py-3">
-                Renovation and Remodeling
+                Residential Construction
               </h4>
               <img src={assets.building} alt="" className="rounded-2xl pb-2" />
               <p>
@@ -59,8 +59,7 @@ const DiscoverUs = () => {
                 className="rounded-2xl pb-2"
               />
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-                nihil eaque quas sequi, aliquid autem!
+                We do everything with safety and professionalismm utilizing today's most advanced technology and unwavering commitment to our customers.
               </p>
             </article>
             <article className="p-5 bg-sky-50">
@@ -73,7 +72,7 @@ const DiscoverUs = () => {
             </article>
             <article className="p-5 bg-sky-50">
               <h4 className="text-1xl font-semibold py-3">
-                Glass and Window installation and repairs
+                Aircondition installation and repairs
               </h4>
               <img
                 src={assets.installation}
@@ -87,22 +86,20 @@ const DiscoverUs = () => {
             </article>
             <article className="p-5 bg-sky-50">
               <h4 className="text-1xl font-semibold py-3">
-                Carpentry work and installation
+                Renovation and Restoration
               </h4>
               <img src={assets.capentry} alt="" className="rounded-2xl pb-2" />
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-                nihil eaque quas sequi, aliquid autem!
+                Our customer-focused, innovative, and creative team will bring your vision to reality.
               </p>
             </article>
             <article className="p-5 bg-sky-50">
               <h4 className="text-1xl font-semibold py-3">
-                Land inquiries and purchasing
+                Landscaping and Infrastructuure
               </h4>
               <img src={assets.land} alt="" className="rounded-2xl pb-2" />
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-                nihil eaque quas sequi, aliquid autem!
+                We help simplify the process of building and landing acquisition by making sure that every land conversation and buying undergoes a background check to verify seller and land ownership
               </p>
             </article>
           </div>
