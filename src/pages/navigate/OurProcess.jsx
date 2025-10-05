@@ -368,12 +368,12 @@ const OurProcess = () => {
                 <img src={assets.trust4} alt="" className="rounded" />
               </div>
 
-              <h3 className="text-1xl font-semibold py-2">
+              <h3 className="text-2xl font-semibold py-2">
                 Your Plan Selection
               </h3>
               <p>
-                From the beginning, you're in charge. We work for you and aim to
-                ensure your satisfaction with your chosen plan You can also
+                From the beginning, you're in charge. We work for you and strive to
+                ensure your satisfaction with your chosen plan. You can also
                 select from our srchitectural designs and floor plans, which are
                 ideal for your family or business.
               </p>
@@ -399,7 +399,7 @@ const OurProcess = () => {
               <div className="py-4">
                 <img src={assets.phase2} alt="" />
               </div>
-              <h3 className="font-semibold 1xl py-2">
+              <h3 className="font-semibold text-2xl py-2">
                 Preparing For The Phases
               </h3>
               <p>
@@ -413,8 +413,9 @@ const OurProcess = () => {
               <p className="grid py-2">
                 <span>1. Project Discussion with The Team</span>
                 <span>2. Plan Selection and Land Readiness</span>
-                <span>3. Budget, Start and Estimated tiem of Completion</span>
-                <span>4. House Model preparation & Design</span>
+                <span>3. House Model preparation & Design</span>
+                <span>4. Budget, Start and Estimated time of Completion</span>
+                <span>5. Finalize selection and model & Construction begins</span>
               </p>
             </div>
           </div>
@@ -430,15 +431,15 @@ const OurProcess = () => {
                   <img src={assets.trust2} alt="" className="rounded" />
                 </div>
 
-                <h3 className="text-1xl font-semibold py-2">
+                <h3 className="text-2xl font-semibold py-2">
                   Execution and Construction
                 </h3>
                 <p>
                   Once a Home or building plan is selected, it is time to make
                   it uniquely yours. Our team is ready to help customized your
-                  buildable plans suitable for your specific use. Once
+                  buildable plans suitable for your specific needs. Once
                   construction begins, we'll follow up with you weekly with
-                  updates and photograhs of progress, sent via communication.
+                  updates and photograhs of progress, sent via your preferred method of communication.
                 </p>
               </div>
             </div>
