@@ -404,7 +404,7 @@ const OurProcess = () => {
               </h3>
               <p>
                 Your Construction will be categorized into phases for proper
-                execution. We are here to drive the result, and you deserve. a
+                execution. We are here to drive the result, and you deserve a
                 company you can trust for your biggest investment, You'll also
                 meet with our construction manager and thoroughly review the
                 final steps to initiate the first phase of construction
