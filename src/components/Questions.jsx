@@ -5,26 +5,26 @@ const faqData = [
     id: 1,
     question: "Why Honest-Builders?",
     answer:
-      "We will not lie, cheat, or use dishonest gain to our advantage. Honesty and transparency are the keys to your peace of mind in the real estate industry when building your dream home. Honest Builders is making building homes fun again. Creating a harmonized building construction experience and delivering quality services to those in the diaspora",
+      "We will not lie, cheat, or use dishonest methods to our advantage. Honesty and transparency are the keys to peace of mind in the real estate industry when building your dream home. Honest Builders ismaking home construction enjoyable again. Creating a harmonious building process and delivering quality services to those in the diaspora.",
   },
 
   {
     id: 2,
     question: "How does it work?",
     answer:
-      "Building a home may be one of the most significant investments you will ever make. Before you build, please research the builder's background and reputation with customers, as well as their years in business. We aim to streamline the construction process by eliminating family mishaps and delivering our clients with sustainable housing for those in the diaspora.",
+      "Building a home may be one of the most significant investments you will ever make. Before you build, please research the builder&#39;s background and reputation with customers, as well as their years in business. We aim to streamline the construction process by eliminating family mishaps and delivering sustainable housing to our clients in the diaspora.",
   },
   {
     id: 3,
     question: "How Do I Get Started?",
     answer:
-      "Bring your vision/plan and curiosity by getting to know the builders. A simple phone call or email to our friendly, experienced, knowledgeable, and trustworthy team will help initiate and answer all your questions. Ask about the type of building and design process, and what warranties come with building your home with us. The process may take time to complete your dream home, so we've created a stress-free process that will put you at ease with our team of experts.",
+      "Bring your vision/plan and curiosity by getting to know the builders. A simple phone call or email to our friendly, experienced, knowledgeable, and trustworthy team will help initiate and answer all your questions. Ask about the type of building and the design process, as well as the warranties that come with building your home with us. The process of building your dream home may take some time, so we&#39;ve created a stress-free approach that will put you at ease with our team of experts.",
   },
   {
     id: 4,
     question: "What kind of support is available?",
     answer:
-      "At Honest Builders, our commitment to your satisfaction continues with us, whether you choose us or another builder. We're committed to helping you find your dream home for your family. We are pleased to provide Customer Care Representatives to navigate you through the beginning of your project and help to answer any reservations you may have regarding building with Honest Builders",
+      "At Honest Builders, our commitment to your satisfaction continues with us, whether you choose us or another builder. We&#39;re committed to helping you find your perfect family home. We are pleased to provide Customer Care Representatives to guide you through the initial stages of your project and address any concerns you may have about building with Honest Builders. Our commitment to your satisfaction continues even after you move into your new home. We are pleased to provide Customer Care Representatives to facilitate servicing of warranty-covered home issues that arise while you are living in your Honest Builders home. We have a list of service providers prepared for dispatch. Our three- year warranty covers the building&#39;s infrastructure, including plumbing, roofing, and electrical systems.",
   },
 ];
 
