@@ -18,7 +18,7 @@ const Discovery = () => {
             <Link to="/trust">HOW TRUST IS BUILT</Link>
           </li>
           <li className="border-l border-white px-2 py-1  sm:px-4 hover:underline cursor-pointer">
-            <Link to="/aboutus">ABOUT US</Link>
+            <Link to="/about-us">ABOUT US</Link>
           </li>
           <li className="border-l border-white px-2 py-1  sm:px-4 hover:underline cursor-pointer">
             <Link to="/services">SERVICES</Link>

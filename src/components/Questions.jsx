@@ -24,7 +24,7 @@ const faqData = [
     id: 4,
     question: "What kind of support is available?",
     answer:
-      "At Honest Builders, our commitment to your satisfaction continues with us, whether you choose us or another builder. We&#39;re committed to helping you find your perfect family home. We are pleased to provide Customer Care Representatives to guide you through the initial stages of your project and address any concerns you may have about building with Honest Builders. Our commitment to your satisfaction continues even after you move into your new home. We are pleased to provide Customer Care Representatives to facilitate servicing of warranty-covered home issues that arise while you are living in your Honest Builders home. We have a list of service providers prepared for dispatch. Our three- year warranty covers the building&#39;s infrastructure, including plumbing, roofing, and electrical systems.",
+      "At Honest Builders, our commitment to your satisfaction continues with us, whether you choose us or another builder. We&#39;re committed to helping you find your perfect family home. We are pleased to provide Customer Care Representatives to guide you through the initial stages of your project and address any concerns you may have about building with Honest Builders. Our commitment to your satisfaction continues even after you move into your new home. We are pleased to provide Customer Care Representatives to facilitate servicing of warranty-covered home issues that arise while you are living in your Honest Builders home. We have a list of service providers prepared for dispatch. Our three- year warranty covers the building&#39;s infrastructure, including plumbing, roofing, and electrical systems.",
   },
 ];
 

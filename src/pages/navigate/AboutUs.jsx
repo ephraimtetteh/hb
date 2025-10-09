@@ -214,15 +214,9 @@ const AboutUs = () => {
           <p className="mt-2 text-xs lg:text-[16px] font-normal">
             FILLING A NEED (A wife's Testimonial)
           </p>
-          <div className="mt-12">
+          <div className="mt-6">
             <p className="text-xs lg:leading-snug lg:text-[18px] font-normal w-[50%]">
-              If you know my husband, he's a servant leader who knows he's
-              called to serve. No matter the need—whether it is one-on-one
-              coaching, mentoring young men, serving the communities, or simply
-              Being a good father—it is his calling. “he’ll tell you I'm
-              listening and following the voice of God.” His 20-plus years in a
-              A leadership-driven environment and a manufacturing landscape have
-              prepared him to get you the results you desire.
+            If you know my husband, he's a servant leader who knows he's called to serve. No matter the need—whether it is one-on-one coaching, mentoring young men, serving the communities, or simply being a good father—it is his calling. “he'll tell you I'm listening and following the voice of God.” His 20-plus years of experience in leadership-driven environments and operations have prepared him to deliver the results you desire.
             </p>
           </div>
         </div>
@@ -230,16 +224,16 @@ const AboutUs = () => {
         <div className=" w-[100%] h-[100%]"></div>
       </section>
 
-      <div className="p-10">
+      {/* <div className="p-10">
         <div className="min-h-screen w-full flex flex-col items-center justify-center font-sans">
-          {/* Main title for the recommendation section */}
+         
           <h1 className="text-4xl sm:text-2xl text-center p-3 font-bold text-gray-800 mb-12">
             What Our Clients Say
           </h1>
 
-          {/* Recommendation Card */}
+  
           <div className="relative bg-white rounded-2xl shadow-xl p-8 md:p-12 max-w-2xl w-full flex items-center justify-between">
-            {/* Left Navigation Arrow */}
+         
             <button className="absolute left-4 bg-gray-200 text-gray-700 p-3 rounded-full shadow-md hover:bg-gray-300 transition-colors duration-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -257,9 +251,8 @@ const AboutUs = () => {
               </svg>
             </button>
 
-            {/* Content Area */}
+           
             <div className="flex flex-col items-center text-center px-12">
-              {/* Testimonial Text */}
               <p className=" text-gray-700 text-lg mb-6 leading-relaxed">
                 If you know my husband, he's a servant leader who knows he's
                 called to serve. No matter the need—whether it is one-on-one
@@ -267,9 +260,8 @@ const AboutUs = () => {
                 simply being a good father—it is his calling.
               </p>
 
-              {/* Author's Image */}
+            
               <div className="w-20 h-20 rounded-full overflow-hidden mb-4 border-4 border-blue-500 shadow-lg">
-                {/* Placeholder image. In a real application, you would use a prop for the image source */}
                 <img
                   src="https://placehold.co/80x80/0000FF/FFFFFF?text=L"
                   alt="Linda"
@@ -282,12 +274,10 @@ const AboutUs = () => {
                 />
               </div>
 
-              {/* Author's Name and Title */}
               <p className="font-bold text-gray-800 text-md">LINDA</p>
               <p className="text-gray-600 text-sm">CEO, Tech Innovators</p>
             </div>
 
-            {/* Right Navigation Arrow */}
             <button className="absolute right-4 bg-gray-200 text-gray-700 p-3 rounded-full shadow-md hover:bg-gray-300 transition-colors duration-200">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -306,7 +296,7 @@ const AboutUs = () => {
             </button>
           </div>
         </div>
-      </div>
+      </div>  */}
     </div>
   );
 };

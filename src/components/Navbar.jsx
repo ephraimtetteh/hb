@@ -61,7 +61,7 @@ const Navbar = () => {
         {/* Desktop Navigation Links */}
         <div className="hidden md:hidden lg:flex items-center gap-8 text-lg font-medium">
           <Link to="/">Build A Home</Link>
-          <Link to="/community">Communities</Link>
+          <Link to="/about-us">Communities</Link>
           <Link to="/plan">Plan & Design</Link>
           <Link to="/contact">Contact Us</Link>
         </div>
@@ -104,7 +104,7 @@ const Navbar = () => {
               Communities
             </Link>
             <Link
-              to="/communities"
+              to="/about-us"
               className="p-2 hover:bg-blue-200 hover:text-black rounded-md"
               onClick={() => setIsMenuOpen(false)}
             >
