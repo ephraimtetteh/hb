@@ -18,7 +18,7 @@ const Footer = () => {
         <div className="flex flex-col gap-4">
           <img src={assets.logo} alt="logo" className="w-78" />
           <p className="text-white max-w-xs text-[14px]">
-            " Our services to you is our dedication to your worth ... "
+            " Our Services to You are Our Dedication to Your Worth ... "
           </p>
         </div>
         <div>

@@ -95,6 +95,15 @@ const DiscoverUs = () => {
             </article>
             <article className="p-5 bg-sky-50">
               <h4 className="text-1xl font-semibold py-3">
+                Property Management
+              </h4>
+              <img src={assets.propertyManagement} alt="" className="rounded-2xl pb-2" />
+              <p>
+                Our customer-focused, innovative, and creative team will bring your vision to reality.
+              </p>
+            </article>
+            <article className="p-5 bg-sky-50">
+              <h4 className="text-1xl font-semibold py-3">
                 Landscaping and Infrastructuure
               </h4>
               <img src={assets.land} alt="" className="rounded-2xl pb-2" />

@@ -35,7 +35,7 @@ const LandingPage = () => {
         <div className='bg-[url("/story.svg")] bg-no-repeat bg-cover bg-center p-10 rounded m-auto my-20 text-white mx-10 '>
           <div>
             <p className='font-semibold border rounded-full p-2 w-[11.5%] border-blue-900'>Our Core Values</p>
-            <h2 className='py-2 text-4xl font-semibold text-blue-300 sm:text-2xl sm:font-medium'>Trust, vision, Growth, commitment, Dedication</h2>
+            <h2 className='py-2 text-4xl font-semibold text-blue-300 sm:text-2xl sm:font-medium'>Trust, commitment, Dedication</h2>
             <button className='bg-white text-black px-4 py-2 hover:bg-transparent hover:border hover:border-white hover:text-white rounded'>Explore more</button>
           </div>
              </div>

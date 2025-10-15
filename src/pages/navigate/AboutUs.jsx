@@ -56,11 +56,11 @@ const AboutUs = () => {
           <div className="">
             <div className="m-auto grid lg:grid-cols-4 sm:grid-cols-1 gap-6">
               <div className="mx-auto grid items-center bg-gray-200 shadow-lg outline outline-none rounded">
-                <div className="rounded sm:rounded">
-                  <img src={assets.team4} alt="" className="m-auto" />
+                <div className="rounded sm:rounded h-[330px] w-[330px]">
+                  <img src={assets.eric} alt="" className="m-auto" width={350} height={350} />
                 </div>
                 <h3 className="font-semibold py-2 text-center">
-                  Sharaf Mohammend
+                  Eric Amponsah
                 </h3>
                 <p className="text-center text-[#1e035e]">CEO & Founder</p>
 

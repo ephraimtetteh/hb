@@ -13,7 +13,7 @@ const Hero = ({img, title}) => {
         </div>
 
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center font-bold md:text-5xl">
-          <span className=" text-white lg:text-3xl sm:text-2xl font-semibold">
+          <span className=" text-white lg:text-6xl sm:text-2xl font-semibold">
             {title}
           </span>
           <br />

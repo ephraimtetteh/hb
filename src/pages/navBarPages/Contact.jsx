@@ -13,7 +13,7 @@ const Contact = () => {
   return (
     <>
       <div>
-        <Hero img={assets.bg8} title={"contact us at"} />
+        <Hero img={assets.contactImage} title={"contact us at"} />
       </div>
       <section>
         {/* Left Section */}

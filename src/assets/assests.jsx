@@ -102,10 +102,20 @@ import plumbing from './plumbing.jpg'
 import capentry from './capentry.jpg'
 import installation from './installation.jpg'
 import land from './land.jpg'
+import propertyManagement from './hb-service2.jpg'
+import eric from './eric.jpg'
+import contactImage from './hb-contact.jpg'
 
 
 
-const assets = { bg9, left, right, selection,
+const assets = { 
+    bg9, 
+    left, 
+    right, 
+    eric,
+    selection,
+    propertyManagement,
+    contactImage,
     phase,
     phase1,
     phase2,
