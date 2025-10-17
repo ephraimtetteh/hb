@@ -96,10 +96,12 @@ const OurProcess = () => {
 
       <div>
         <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-4 items-start justify-center mx-auto p-10 border-b border-gray-200 overflow-auto">
+          {/* =========== appointment image ========== */}
           <div className="sm:w-xl">
             <img src={assets.booking} alt="" />
           </div>
 
+          {/* =========== appointment content */}
           <div className="">
             <div className=" py-2 font-semibold text-2xl">
               <h2>Appointment Booking</h2>
@@ -179,12 +181,10 @@ const OurProcess = () => {
             <div className="py-5 w-32"></div>
           </div>
         </div>
+          {/*  ========= end of book appointment */}
 
         <div className="grid lg:grid-cols-2 grid-cols-1 gap-4 items-start justify-center mx-auto p-10 border-b border-gray-200">
-          <div>
-            {/* <img src={assets.project} alt="" /> */}
-            <div className="grid lg:grid-cols-2 md:grid-cols-1 gap-4 items-start justify-center mx-auto p-10 border-b border-gray-200">
-            <div className="">
+          <div className="">
             <div className=" py-2 font-semibold text-2xl">
               <h2>Project Discussion</h2>
             </div>
@@ -260,91 +260,89 @@ const OurProcess = () => {
 
             <div className="py-5 w-32"></div>
           </div>
-              <div className="">
-                <div className=" py-2 font-semibold text-2xl">
-                  <h2>Real-Time Tracking</h2>
-                </div>
-                <p className="py-2">Track your shipment anytime, anywhere.</p>
 
-                <div className="grid gap-4 w-5/6">
-                  <div className="flex gap-3 items-center justify-center">
-                    <div className="bg-blue-500 rounded-full w-2 p-2">
-                      <span className="w-1"></span>
-                    </div>
-                    <div className="flex items-center justify-center">
-                      <div className="flex  w-2xl">
-                        <p className="text-[12px]">
-                          <span className="text-[14px] font-medium">
-                            GPS-enabled tracking:{" "}
-                          </span>
-                          Follow your shipment's journey on an interactive map
-                        </p>
-                      </div>
-                    </div>
-                  </div>
+          {/* ======= tracking ======= */}
 
-                  <div className="flex gap-3 items-center justify-center">
-                    <div className="bg-blue-500 rounded-full w-2 p-2">
-                      <span className="w-1"></span>
-                    </div>
-                    <div className="flex items-center justify-center gap-2">
-                      <div className="flex w-2xl">
-                        <p className="text-[12px]">
-                          <span className="text-[14px] font-medium">
-                            Milestone Notification:{" "}
-                          </span>
-                          Get alert for key events like pickup, transit, and
-                          delivery
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-3 items-center justify-center">
-                    <div className="bg-blue-500 rounded-full w-2 p-2">
-                      <span className="w-1"></span>
-                    </div>
-                    <div className="flex items-center justify-center gap-2">
-                      <div className="flex w-2xl">
-                        <p className="text-[12px]">
-                          <span className="text-[14px] font-medium">
-                            Estimated Delivery Times:{" "}
-                          </span>
-                          Know exactly when your shipment will arrive
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div className="flex gap-3 items-center justify-center">
-                    <div className="bg-blue-500 rounded-full w-2 p-2">
-                      <span className="w-1"></span>
-                    </div>
-                    <div className="flex items-center justify-center gap-2">
-                      <div className="flex w-2xl">
-                        <p className="text-[12px]">
-                          <span className="text-[14px] font-medium">
-                            Weather-Proofing:{" "}
-                          </span>
-                          Recieve alerts and solutions for weather sensitive cargo
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="py-5 w-32"></div>
+          <div className="">
+              <div className=" py-2 font-semibold text-2xl">
+                <h2>Real-Time Tracking</h2>
               </div>
-            </div>
+              <p className="py-2">Track your shipment anytime, anywhere.</p>
+
+              <div className="grid gap-4 w-5/6">
+                <div className="flex gap-3 items-center justify-center">
+                  <div className="bg-blue-500 rounded-full w-2 p-2">
+                    <span className="w-1"></span>
+                  </div>
+                  <div className="flex items-center justify-center">
+                    <div className="flex  w-2xl">
+                      <p className="text-[12px]">
+                        <span className="text-[14px] font-medium">
+                          GPS-enabled tracking:{" "}
+                        </span>
+                        Follow your shipment's journey on an interactive map
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex gap-3 items-center justify-center">
+                  <div className="bg-blue-500 rounded-full w-2 p-2">
+                    <span className="w-1"></span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <div className="flex w-2xl">
+                      <p className="text-[12px]">
+                        <span className="text-[14px] font-medium">
+                          Milestone Notification:{" "}
+                        </span>
+                        Get alert for key events like pickup, transit, and
+                        delivery
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex gap-3 items-center justify-center">
+                  <div className="bg-blue-500 rounded-full w-2 p-2">
+                    <span className="w-1"></span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <div className="flex w-2xl">
+                      <p className="text-[12px]">
+                        <span className="text-[14px] font-medium">
+                          Estimated Delivery Times:{" "}
+                        </span>
+                        Know exactly when your shipment will arrive
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex gap-3 items-center justify-center">
+                  <div className="bg-blue-500 rounded-full w-2 p-2">
+                    <span className="w-1"></span>
+                  </div>
+                  <div className="flex items-center justify-center gap-2">
+                    <div className="flex w-2xl">
+                      <p className="text-[12px]">
+                        <span className="text-[14px] font-medium">
+                          Weather-Proofing:{" "}
+                        </span>
+                        Recieve alerts and solutions for weather sensitive cargo
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="py-5 w-32"></div>
           </div>
-
-          
-
-         
+        {/* end of second breakdown */}
         </div>
-
-       
+        {/* end of breakdown */}
       </div>
+
 
       {/* our Journey */}
 

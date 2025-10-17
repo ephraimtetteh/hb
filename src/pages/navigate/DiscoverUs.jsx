@@ -7,6 +7,7 @@ import { CiTimer } from "react-icons/ci";
 import { TbBrandBooking } from "react-icons/tb";
 import Discovery from '../../components/Discovery';
 import { Link } from 'react-router-dom';
+import { services } from '../../data';
 
 const DiscoverUs = () => {
   return (
@@ -40,82 +41,23 @@ const DiscoverUs = () => {
             Services and Capabilities
           </h2>
 
-          <div className="grid lg:grid-cols-3 sm:grid-cols-1 md:grid-cols-2 gap-4">
-            <article className="p-5 bg-sky-50">
-              <h4 className="text-1xl font-semibold py-3">
-                Residential Construction
-              </h4>
-              <img src={assets.building} alt="" className="rounded-2xl pb-2" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-                nihil eaque quas sequi, aliquid autem!
-              </p>
-            </article>
-            <article className="p-5 bg-sky-50">
-              <h4 className="text-1xl font-semibold py-3">Electrical</h4>
-              <img
-                src={assets.electricals}
-                alt=""
-                className="rounded-2xl pb-2"
-              />
-              <p>
-                We do everything with safety and professionalismm utilizing today's most advanced technology and unwavering commitment to our customers.
-              </p>
-            </article>
-            <article className="p-5 bg-sky-50">
-              <h4 className="text-1xl font-semibold py-3">Plumbing</h4>
-              <img src={assets.plumbing} alt="" className="rounded-2xl pb-2" />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-                nihil eaque quas sequi, aliquid autem!
-              </p>
-            </article>
-            <article className="p-5 bg-sky-50">
-              <h4 className="text-1xl font-semibold py-3">
-                Aircondition installation and repairs
-              </h4>
-              <img
-                src={assets.installation}
-                alt=""
-                className="rounded-2xl pb-2"
-              />
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
-                nihil eaque quas sequi, aliquid autem!
-              </p>
-            </article>
-            <article className="p-5 bg-sky-50">
-              <h4 className="text-1xl font-semibold py-3">
-                Renovation and Restoration
-              </h4>
-              <img src={assets.capentry} alt="" className="rounded-2xl pb-2" />
-              <p>
-                Our customer-focused, innovative, and creative team will bring your vision to reality.
-              </p>
-            </article>
-            <article className="p-5 bg-sky-50">
-              <h4 className="text-1xl font-semibold py-3">
-                Property Management
-              </h4>
-              <img src={assets.propertyManagement} alt="" className="rounded-2xl pb-2" />
-              <p>
-                Our customer-focused, innovative, and creative team will bring your vision to reality.
-              </p>
-            </article>
-            <article className="p-5 bg-sky-50">
-              <h4 className="text-1xl font-semibold py-3">
-                Landscaping and Infrastructuure
-              </h4>
-              <img src={assets.land} alt="" className="rounded-2xl pb-2" />
-              <p>
-                We help simplify the process of building and landing acquisition by making sure that every land conversation and buying undergoes a background check to verify seller and land ownership
-              </p>
-            </article>
+          <div className="grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2 gap-4">
+           {
+              services.map((service) => {
+                return(
+                  <article className="p-5 bg-sky-50/25 border border-sky-100 rounded-2xl hover:shadow hover:border-gray-200">
+                  <h4 className="text-1xl font-semibold py-3">{service.title}</h4>
+                  <img src={service.img} alt="" className="rounded-2xl pb-2 w-[100%] h-[280px]" />
+                  <p className='text-[12px]'>{service.text}</p>
+                </article>
+                )
+              })
+           }
           </div>
 
           <div className="m-auto py-4">
             <Link to={"/contact"}>
-              <button className="bg-sky-700 text-white p-3 rounded">
+              <button className="bg-[#1e305e] text-white p-3 rounded">
                 Request Our Service
               </button>
             </Link>

@@ -2,8 +2,12 @@ import assets from "../../assets/assests.jsx";
 import Discovery from "../../components/Discovery.jsx";
 import { FaInstagram, FaLinkedinIn, FaFacebookF } from "react-icons/fa6";
 import Hero from "../../components/Hero.jsx";
+import { team } from "../../data.js";
+import { useState } from "react";
 
 const AboutUs = () => {
+  const [readMore, setReadMore] = useState(false)
+
   return (
     <div>
       {/* Hero Section */}
@@ -26,7 +30,7 @@ const AboutUs = () => {
       </section>
 
       {/* Mission Section */}
-      <section className="border-b border-blue-200">
+      <section className="">
         <div className="lg:px-12 px-4 lg:py-10 py-4 flex flex-col items-center">
           <img src={assets.pictures} className="max-w-full mb-10" alt="About" />
 
@@ -42,9 +46,9 @@ const AboutUs = () => {
       </section>
 
       {/* Meet the Team Section */}
-      <section className="p-10">
+      <section className="p-10 bg-sky-50/50">
         <div className="w-3/5 mx-auto lg:py-3">
-          <h1 className="lg:text-3xl text-center font-bold">Meet Our Team</h1>
+          <h1 className="lg:text-3xl text-2xl text-center font-bold">Meet Our Team</h1>
 
           <p className="text-xs lg:leading-snug text-center font-normal mt-6">
             Get up close and personal and know more about our people and why you
@@ -52,170 +56,41 @@ const AboutUs = () => {
           </p>
         </div>
 
-        <div className="border-b border-blue-100 pb-10">
-          <div className="">
-            <div className="m-auto grid lg:grid-cols-4 sm:grid-cols-1 gap-6">
-              <div className="mx-auto grid items-center bg-gray-200 shadow-lg outline outline-none rounded">
-                <div className="rounded sm:rounded h-[330px] w-[330px]">
-                  <img src={assets.eric} alt="" className="m-auto" width={350} height={350} />
-                </div>
-                <h3 className="font-semibold py-2 text-center">
-                  Eric Amponsah
-                </h3>
-                <p className="text-center text-[#1e035e]">CEO & Founder</p>
+        <div className="">
+            <div className="m-auto grid lg:grid-cols-4 sm:grid-cols-1 md:grid-cols-2 gap-6 py-[6rem]">
 
-                <div className="items-center mx-auto p-1">
-                  <div className="flex gap-4">
-                    <a
-                      href="#"
-                      aria-label="Instagram"
-                      className="hover:text-red-600 transition-colors"
-                    >
-                      <FaInstagram size={20} />
-                    </a>
-                    <a
-                      href="#"
-                      aria-label="Facebook"
-                      className="hover:text-red-600 transition-colors"
-                    >
-                      <FaFacebookF size={20} />
-                    </a>
-                    <a
-                      href="#"
-                      aria-label="LinkedIn"
-                      className="hover:text-red-600 transition-colors"
-                    >
-                      <FaLinkedinIn size={20} />
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div className="mx-auto grid items-center bg-gray-200 shadow-lg outline outline-none rounded">
-                <div className="rounded sm:rounded">
-                  <img src={assets.team5} alt="" className="m-auto" />
-                </div>
-                <h3 className="font-semibold py-2 text-center">
-                  Sharaf Abdalla
-                </h3>
-                <p className="text-center text-[#1e035e]">
-                  Operations Director
-                </p>
-
-                <div className="items-center mx-auto p-1">
-                  <div className="flex gap-4">
-                    <a
-                      href="#"
-                      aria-label="Instagram"
-                      className="hover:text-red-600 transition-colors"
-                    >
-                      <FaInstagram size={20} />
-                    </a>
-                    <a
-                      href="#"
-                      aria-label="Facebook"
-                      className="hover:text-red-600 transition-colors"
-                    >
-                      <FaFacebookF size={20} />
-                    </a>
-                    <a
-                      href="#"
-                      aria-label="LinkedIn"
-                      className="hover:text-red-600 transition-colors"
-                    >
-                      <FaLinkedinIn size={20} />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="mx-auto grid items-center bg-gray-200 shadow-lg outline outline-none rounded">
-                <div className="rounded sm:rounded">
-                  <img src={assets.team2} alt="" className="m-auto" />
-                </div>
-                <h3 className="font-semibold py-2 text-center">
-                  Sharaf Mohammend
-                </h3>
-                <p className="text-center text-[#1e035e]">
-                  Chief Technology Officer
-                </p>
-
-                <div className="items-center mx-auto p-1">
-                  <div className="flex gap-4">
-                    <a
-                      href="#"
-                      aria-label="Instagram"
-                      className="hover:text-red-600 transition-colors"
-                    >
-                      <FaInstagram size={20} />
-                    </a>
-                    <a
-                      href="#"
-                      aria-label="Facebook"
-                      className="hover:text-red-600 transition-colors"
-                    >
-                      <FaFacebookF size={20} />
-                    </a>
-                    <a
-                      href="#"
-                      aria-label="LinkedIn"
-                      className="hover:text-red-600 transition-colors"
-                    >
-                      <FaLinkedinIn size={20} />
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="mx-auto grid items-center bg-gray-200 shadow-lg outline outline-none rounded">
-                <div className="rounded sm:rounded">
-                  <img src={assets.team3} alt="" className="m-auto" />
-                </div>
-                <h3 className="font-semibold py-2 text-center">
-                  Sharaf Mohammend
-                </h3>
-                <p className="text-center text-[#1e035e]">
-                  Chief Technology Officer
-                </p>
-
-                <div className="items-center mx-auto p-1">
-                  <div className="flex gap-4">
-                    <a
-                      href="#"
-                      aria-label="Instagram"
-                      className="hover:text-red-600 transition-colors"
-                    >
-                      <FaInstagram size={20} />
-                    </a>
-                    <a
-                      href="#"
-                      aria-label="Facebook"
-                      className="hover:text-red-600 transition-colors"
-                    >
-                      <FaFacebookF size={20} />
-                    </a>
-                    <a
-                      href="#"
-                      aria-label="LinkedIn"
-                      className="hover:text-red-600 transition-colors"
-                    >
-                      <FaLinkedinIn size={20} />
-                    </a>
-                  </div>
-                </div>
-              </div>
+              {
+                team.map((member) => {
+                  return(
+                    <div key={member.id} className="relative bg-white pb-2">
+                      <div className="">
+                        <img src={member.img} alt="" className="rounded h-[460px] w-[100%]"/>
+                      </div>
+                      <h4 className="text-center py-3 font-semibold ">{member.name}</h4>
+                        {readMore && 
+                        <div className="absolute bg-black/70 top-15 p-4 rounded">
+                          <p className="text-center font-medium text-white">{member.title}</p>
+                        <small className="text-white text-[16px] text-center">{member.bio}</small>
+                        </div>
+                        }
+                      <button onClick={() => setReadMore(prev => !prev)} className="w-[fit-content] underline items-center justify-center grid m-auto place-items-center rounded text-[12px]">{readMore ? 'Read Less': 'Read More'}</button>
+                    </div>
+                  )
+                })
+              }
             </div>
-          </div>
         </div>
       </section>
 
       {/* Our Story Section */}
-      <section className="grid sm:grid-cols-1 items-start justify-center bg-[url('/story.svg')] bg-no-repeat bg-right py-40 px-10 bg-contain border-b border-blue-50 p-10">
-        <div className="">
-          <h1 className="lg:text-[44px] font-semibold ">Our Story</h1>
-          <p className="mt-2 text-xs lg:text-[16px] font-normal">
+      <section className="bg-[url('/story.svg')] px-10 py-12 bottom-0 bg-no-repeat bg-cover m-10 rounded-2xl">
+        <div className=" bg-black/50 text-white py-10 rounded-2xl items-center justify-center">
+          <h1 className="lg:text-[44px] font-semibold px-10 text-amber-300">Our Story</h1>
+          <p className="mt-2 text-xs lg:text-[16px] font-normal px-10">
             FILLING A NEED (A wife's Testimonial)
           </p>
-          <div className="mt-6">
-            <p className="text-xs lg:leading-snug lg:text-[18px] font-normal w-[50%]">
+          <div className="">
+            <p className="text-xs lg:leading-snug lg:text-[16px] font-normal p-10">
             If you know my husband, he's a servant leader who knows he's called to serve. No matter the need—whether it is one-on-one coaching, mentoring young men, serving the communities, or simply being a good father—it is his calling. “he'll tell you I'm listening and following the voice of God.” His 20-plus years of experience in leadership-driven environments and operations have prepared him to deliver the results you desire.
             </p>
           </div>

@@ -27,7 +27,7 @@ const CustomerCare = () => {
             <p className="items-center text-center">Have a customer care issues that needs attention,</p>
             <div className=" grid place-content-center m-auto p-2">
               <Link to={'/requests'}>
-              <button className="bg-white text-black px-4 py-2 cursor-pointer">Contact Customer Care</button>
+              <button className="bg-white text-black px-4 py-2 cursor-pointer rounded">Contact Customer Care</button>
               </Link>
               </div>
           </div>

@@ -3,10 +3,12 @@ import assets from "../assets/assests.jsx";
 import Discovery from "../components/Discovery.jsx";
 import Questions from "../components/Questions.jsx"
 import Form from "../components/Form.jsx";
+import { coreValues } from "../data.js";
 
 const LandingPage = () => {
   const images = [assets.bg5, assets.bg2, assets.bg3, assets.bg5, assets.hbh2];
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isCoreValues, setIsCoreValues] = useState(false)
 
   useEffect(() => {
     const intervalId = setInterval(() => {
@@ -34,11 +36,30 @@ const LandingPage = () => {
       <div className="border-b-2 border-blue-50">
         <div className='bg-[url("/story.svg")] bg-no-repeat bg-cover bg-center p-10 rounded m-auto my-20 text-white mx-10 '>
           <div>
-            <p className='font-semibold border rounded-full p-2 w-[11.5%] border-blue-900'>Our Core Values</p>
-            <h2 className='py-2 text-4xl font-semibold text-blue-300 sm:text-2xl sm:font-medium'>Trust, commitment, Dedication</h2>
-            <button className='bg-white text-black px-4 py-2 hover:bg-transparent hover:border hover:border-white hover:text-white rounded'>Explore more</button>
+            <p className='font-semibold border rounded-full p-2 w-[fit-content] border-blue-900 md:text-[14px]'>Our Core Values</p>
+            { 
+              !isCoreValues ? 
+                <div>
+                  <h2 className='py-2 text-4xl font-semibold text-blue-300 sm:text-2xl sm:font-medium'>Trust, commitment, Dedication</h2> 
+                </div>
+            
+            :
+              coreValues.map((corevalue) => {
+                  return (
+                    <div className="">
+                    <div className="py-4">
+                      <h4 className="text-3xl pb-2 font-semibold text-amber-200">{corevalue.title}</h4>
+                      <p>{corevalue.text}</p>
+                    </div>
+                    </div>
+                  )
+                
+              })
+              
+          }
+           <button className='bg-white text-black px-4 py-2 hover:bg-transparent hover:border hover:border-white hover:text-white rounded cursor-pointer' onClick={() => setIsCoreValues(prev => !prev)}>{isCoreValues? 'Show less': 'Explore More'}</button>
           </div>
-             </div>
+        </div>
       </div>
 
       <section className="p-10">
