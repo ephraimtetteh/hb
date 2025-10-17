@@ -52,7 +52,7 @@ const Contact = () => {
            <Form />
           </div>
         </div>
-        <Card title={'Apply to Career Services'} text={'Are you a professional at what you do, do you have the skills, apply to any of our carrer services.'} cardBtn={'Apply'}/>
+        <Card title={'Apply to Career Services'} text={'Are you a professional at what you do, do you have the skills, apply to any of our career services.'} cardBtn={'Apply'}/>
       </section>
     </>
   );

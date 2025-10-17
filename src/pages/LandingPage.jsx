@@ -40,7 +40,7 @@ const LandingPage = () => {
             { 
               !isCoreValues ? 
                 <div>
-                  <h2 className='py-2 text-4xl font-semibold text-blue-300 sm:text-2xl sm:font-medium'>Trust, commitment, Dedication</h2> 
+                  <h2 className='py-2 text-4xl font-semibold text-blue-300 sm:text-2xl sm:font-medium'>Trust, Relationship, Dedication, Commitment</h2> 
                 </div>
             
             :

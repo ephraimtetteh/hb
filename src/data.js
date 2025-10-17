@@ -11,7 +11,7 @@ import service7 from './assets/land.jpg'
 export const coreValues =[
     {
         title: 'Trust',
-        text: 'We will keep our and take responsibility for delivering on them'
+        text: 'We will keep our promises and take responsibility for delivering on them'
     },
     {
         title: 'Relationship',
